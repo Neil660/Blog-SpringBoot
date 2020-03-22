@@ -1,0 +1,1241 @@
+2020-03-22 21:20:07.612 [background-preinit] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2020-03-22 21:20:07.632 [background-preinit] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2020-03-22 21:20:07.632 [background-preinit] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2020-03-22 21:20:07.632 [background-preinit] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2020-03-22 21:20:07.632 [background-preinit] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2020-03-22 21:20:07.632 [background-preinit] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2020-03-22 21:20:07.921 [main] INFO  com.my.blog.website.CoreApplication - Starting CoreApplication on LAPTOP-5L8L30A9 with PID 12768 (started by 黄成毅 in D:\Program Files\IntelliJ IDEA 2018.3.5\running_files\Blog-SpringBoot)
+2020-03-22 21:20:07.931 [main] DEBUG com.my.blog.website.CoreApplication - Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-03-22 21:20:07.931 [main] INFO  com.my.blog.website.CoreApplication - The following profiles are active: dev
+2020-03-22 21:20:09.433 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\Program Files\IntelliJ IDEA 2018.3.5\running_files\Blog-SpringBoot\target\classes\com\my\blog\website\dao\AttachVoMapper.class]
+2020-03-22 21:20:09.433 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\Program Files\IntelliJ IDEA 2018.3.5\running_files\Blog-SpringBoot\target\classes\com\my\blog\website\dao\CommentVoMapper.class]
+2020-03-22 21:20:09.433 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\Program Files\IntelliJ IDEA 2018.3.5\running_files\Blog-SpringBoot\target\classes\com\my\blog\website\dao\ContentVoMapper.class]
+2020-03-22 21:20:09.433 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\Program Files\IntelliJ IDEA 2018.3.5\running_files\Blog-SpringBoot\target\classes\com\my\blog\website\dao\LogVoMapper.class]
+2020-03-22 21:20:09.433 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\Program Files\IntelliJ IDEA 2018.3.5\running_files\Blog-SpringBoot\target\classes\com\my\blog\website\dao\MetaVoMapper.class]
+2020-03-22 21:20:09.433 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\Program Files\IntelliJ IDEA 2018.3.5\running_files\Blog-SpringBoot\target\classes\com\my\blog\website\dao\OptionVoMapper.class]
+2020-03-22 21:20:09.433 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\Program Files\IntelliJ IDEA 2018.3.5\running_files\Blog-SpringBoot\target\classes\com\my\blog\website\dao\RelationshipVoMapper.class]
+2020-03-22 21:20:09.433 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\Program Files\IntelliJ IDEA 2018.3.5\running_files\Blog-SpringBoot\target\classes\com\my\blog\website\dao\UserVoMapper.class]
+2020-03-22 21:20:09.433 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'attachVoMapper' and 'com.my.blog.website.dao.AttachVoMapper' mapperInterface
+2020-03-22 21:20:09.433 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'attachVoMapper'.
+2020-03-22 21:20:09.433 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'commentVoMapper' and 'com.my.blog.website.dao.CommentVoMapper' mapperInterface
+2020-03-22 21:20:09.433 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'commentVoMapper'.
+2020-03-22 21:20:09.433 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'contentVoMapper' and 'com.my.blog.website.dao.ContentVoMapper' mapperInterface
+2020-03-22 21:20:09.433 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'contentVoMapper'.
+2020-03-22 21:20:09.433 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'logVoMapper' and 'com.my.blog.website.dao.LogVoMapper' mapperInterface
+2020-03-22 21:20:09.433 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'logVoMapper'.
+2020-03-22 21:20:09.433 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'metaVoMapper' and 'com.my.blog.website.dao.MetaVoMapper' mapperInterface
+2020-03-22 21:20:09.433 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'metaVoMapper'.
+2020-03-22 21:20:09.433 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'optionVoMapper' and 'com.my.blog.website.dao.OptionVoMapper' mapperInterface
+2020-03-22 21:20:09.433 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'optionVoMapper'.
+2020-03-22 21:20:09.433 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'relationshipVoMapper' and 'com.my.blog.website.dao.RelationshipVoMapper' mapperInterface
+2020-03-22 21:20:09.433 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'relationshipVoMapper'.
+2020-03-22 21:20:09.433 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userVoMapper' and 'com.my.blog.website.dao.UserVoMapper' mapperInterface
+2020-03-22 21:20:09.433 [main] DEBUG org.mybatis.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userVoMapper'.
+2020-03-22 21:20:26.313 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-03-22 21:20:26.398 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2020-03-22 21:20:26.861 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [D:\Program Files\IntelliJ IDEA 2018.3.5\running_files\Blog-SpringBoot\target\classes\mapper\AttachVoMapper.xml]'
+2020-03-22 21:20:26.911 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [D:\Program Files\IntelliJ IDEA 2018.3.5\running_files\Blog-SpringBoot\target\classes\mapper\CommentVoMapper.xml]'
+2020-03-22 21:20:26.961 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [D:\Program Files\IntelliJ IDEA 2018.3.5\running_files\Blog-SpringBoot\target\classes\mapper\ContentVoMapper.xml]'
+2020-03-22 21:20:26.991 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [D:\Program Files\IntelliJ IDEA 2018.3.5\running_files\Blog-SpringBoot\target\classes\mapper\LogVoMapper.xml]'
+2020-03-22 21:20:27.021 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [D:\Program Files\IntelliJ IDEA 2018.3.5\running_files\Blog-SpringBoot\target\classes\mapper\MetaVoMapper.xml]'
+2020-03-22 21:20:27.101 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [D:\Program Files\IntelliJ IDEA 2018.3.5\running_files\Blog-SpringBoot\target\classes\mapper\OptionVoMapper.xml]'
+2020-03-22 21:20:27.121 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [D:\Program Files\IntelliJ IDEA 2018.3.5\running_files\Blog-SpringBoot\target\classes\mapper\RelationshipVoMapper.xml]'
+2020-03-22 21:20:27.146 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [D:\Program Files\IntelliJ IDEA 2018.3.5\running_files\Blog-SpringBoot\target\classes\mapper\UserVoMapper.xml]'
+2020-03-22 21:20:27.454 [main] DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2020-03-22 21:20:27.455 [main] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2020-03-22 21:20:27.513 [main] DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2020-03-22 21:20:27.514 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2020-03-22 21:20:27.515 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2020-03-22 21:20:27.515 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2020-03-22 21:20:27.516 [main] DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2020-03-22 21:20:27.516 [main] DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2020-03-22 21:20:27.517 [main] DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2020-03-22 21:20:27.517 [main] DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2020-03-22 21:20:27.517 [main] DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2020-03-22 21:20:27.523 [main] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2020-03-22 21:20:27.523 [main] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2020-03-22 21:20:27.524 [main] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2020-03-22 21:20:27.524 [main] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2020-03-22 21:20:27.524 [main] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2020-03-22 21:20:29.522 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-03-22 21:20:29.671 [main] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+2020-03-22 21:20:29.696 [main] DEBUG io.lettuce.core.resource.DefaultClientResources - -Dio.netty.eventLoopThreads: 4
+2020-03-22 21:20:29.730 [main] DEBUG io.lettuce.core.resource.DefaultEventLoopGroupProvider - Creating executor io.netty.util.concurrent.DefaultEventExecutorGroup
+2020-03-22 21:20:29.764 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2020-03-22 21:20:29.764 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2020-03-22 21:20:29.772 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+2020-03-22 21:20:29.772 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+2020-03-22 21:20:29.776 [main] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@ed2f2f6
+2020-03-22 21:20:29.783 [main] DEBUG io.netty.util.internal.PlatformDependent - Platform: Windows
+2020-03-22 21:20:29.822 [main] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+2020-03-22 21:20:29.822 [main] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 8
+2020-03-22 21:20:29.823 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+2020-03-22 21:20:29.825 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+2020-03-22 21:20:29.825 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+2020-03-22 21:20:29.826 [main] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+2020-03-22 21:20:29.827 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+2020-03-22 21:20:29.827 [main] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2020-03-22 21:20:29.827 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+2020-03-22 21:20:29.827 [main] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+2020-03-22 21:20:29.828 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\黄成毅\AppData\Local\Temp (java.io.tmpdir)
+2020-03-22 21:20:29.828 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2020-03-22 21:20:29.829 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 1862270976 bytes
+2020-03-22 21:20:29.829 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2020-03-22 21:20:29.830 [main] DEBUG io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+2020-03-22 21:20:29.830 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+2020-03-22 21:20:29.832 [main] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+2020-03-22 21:20:29.850 [main] DEBUG reactor.util.Loggers$LoggerFactory - Using Slf4j logging framework
+2020-03-22 21:20:29.970 [main] DEBUG io.lettuce.core.resource.DefaultClientResources - LatencyUtils/HdrUtils are not available, metrics are disabled
+2020-03-22 21:20:30.231 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+2020-03-22 21:20:30.232 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+2020-03-22 21:20:30.233 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+2020-03-22 21:20:30.234 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+2020-03-22 21:20:30.234 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+2020-03-22 21:20:30.235 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+2020-03-22 21:20:30.239 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+2020-03-22 21:20:30.241 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+2020-03-22 21:20:30.241 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2020-03-22 21:20:30.242 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+2020-03-22 21:20:30.243 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2020-03-22 21:20:30.243 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+2020-03-22 21:20:30.244 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2020-03-22 21:20:32.990 [main] INFO  com.my.blog.website.CoreApplication - Started CoreApplication in 26.463 seconds (JVM running for 31.116)
+2020-03-22 21:20:36.170 [http-nio-8080-exec-10] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36
+2020-03-22 21:20:36.171 [http-nio-8080-exec-10] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /, 来路地址: 0:0:0:0:0:0:0:1
+2020-03-22 21:20:36.305 [http-nio-8080-exec-10] INFO  com.my.blog.website.utils.LogAspect - URL : http://localhost:8080/,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.IndexController.index,ARGS : [org.apache.catalina.connector.RequestFacade@3b306e7b, 6]
+2020-03-22 21:20:36.362 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:20:36.379 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19c09e58] was not registered for synchronization because synchronization is not active
+2020-03-22 21:20:36.512 [http-nio-8080-exec-10] DEBUG SQL_CACHE - Cache Hit Ratio [SQL_CACHE]: 0.0
+2020-03-22 21:20:36.623 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:20:36.627 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_contents WHERE (type = ? AND status = ?) 
+2020-03-22 21:20:36.627 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_contents WHERE (type = ? AND status = ?) 
+2020-03-22 21:20:36.682 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: post(String), publish(String)
+2020-03-22 21:20:36.682 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: post(String), publish(String)
+2020-03-22 21:20:39.556 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2020-03-22 21:20:39.556 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2020-03-22 21:20:39.563 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select cid, title, slug, created, modified, author_id, type, status, tags, categories, hits, comments_num, allow_comment, allow_ping, allow_feed , content from t_contents WHERE ( type = ? and status = ? ) order by created desc LIMIT ? 
+2020-03-22 21:20:39.563 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select cid, title, slug, created, modified, author_id, type, status, tags, categories, hits, comments_num, allow_comment, allow_ping, allow_feed , content from t_contents WHERE ( type = ? and status = ? ) order by created desc LIMIT ? 
+2020-03-22 21:20:39.564 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - ==> Parameters: post(String), publish(String), 6(Integer)
+2020-03-22 21:20:39.564 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - ==> Parameters: post(String), publish(String), 6(Integer)
+2020-03-22 21:20:39.924 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - <==      Total: 1
+2020-03-22 21:20:39.924 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - <==      Total: 1
+2020-03-22 21:20:39.925 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19c09e58]
+2020-03-22 21:20:39.926 [http-nio-8080-exec-10] INFO  com.my.blog.website.utils.LogAspect - RESPONSE : themes/default/index
+2020-03-22 21:20:39.957 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:20:39.957 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4b109679] was not registered for synchronization because synchronization is not active
+2020-03-22 21:20:39.958 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:20:39.959 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:20:39.959 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:20:39.959 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:20:39.959 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:20:40.523 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:20:40.523 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:20:40.524 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4b109679]
+2020-03-22 21:20:40.579 [http-nio-8080-exec-10] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2020-03-22 21:20:40.859 [http-nio-8080-exec-10] DEBUG org.thymeleaf.TemplateEngine.CONFIG - Initializing Thymeleaf Template engine configuration...
+[THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Thymeleaf version: 3.0.11.RELEASE (built 2018-10-28T22:35:28+0000)
+[THYMELEAF] * Cache Manager implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template resolvers:
+[THYMELEAF]     * org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers:
+[THYMELEAF]     * org.thymeleaf.spring5.messageresolver.SpringMessageResolver
+[THYMELEAF] * Link builders:
+[THYMELEAF]     * org.thymeleaf.linkbuilder.StandardLinkBuilder
+[THYMELEAF] * Dialect [1 of 2]: SpringStandard (org.thymeleaf.spring5.dialect.SpringStandardDialect)
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF]     * Processors for Template Mode: HTML
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {th:include,data-th-include}] [100]: org.thymeleaf.standard.processor.StandardIncludeTagProcessor
+[THYMELEAF]             * [* {th:insert,data-th-insert}] [100]: org.thymeleaf.standard.processor.StandardInsertTagProcessor
+[THYMELEAF]             * [* {th:replace,data-th-replace}] [100]: org.thymeleaf.standard.processor.StandardReplaceTagProcessor
+[THYMELEAF]             * [* {th:substituteby,data-th-substituteby}] [100]: org.thymeleaf.standard.processor.StandardSubstituteByTagProcessor
+[THYMELEAF]             * [* {th:each,data-th-each}] [200]: org.thymeleaf.standard.processor.StandardEachTagProcessor
+[THYMELEAF]             * [* {th:switch,data-th-switch}] [250]: org.thymeleaf.standard.processor.StandardSwitchTagProcessor
+[THYMELEAF]             * [* {th:case,data-th-case}] [275]: org.thymeleaf.standard.processor.StandardCaseTagProcessor
+[THYMELEAF]             * [* {th:if,data-th-if}] [300]: org.thymeleaf.standard.processor.StandardIfTagProcessor
+[THYMELEAF]             * [* {th:unless,data-th-unless}] [400]: org.thymeleaf.standard.processor.StandardUnlessTagProcessor
+[THYMELEAF]             * [* {th:object,data-th-object}] [500]: org.thymeleaf.spring5.processor.SpringObjectTagProcessor
+[THYMELEAF]             * [* {th:with,data-th-with}] [600]: org.thymeleaf.standard.processor.StandardWithTagProcessor
+[THYMELEAF]             * [* {th:attr,data-th-attr}] [700]: org.thymeleaf.standard.processor.StandardAttrTagProcessor
+[THYMELEAF]             * [* {th:attrprepend,data-th-attrprepend}] [800]: org.thymeleaf.standard.processor.StandardAttrprependTagProcessor
+[THYMELEAF]             * [* {th:attrappend,data-th-attrappend}] [900]: org.thymeleaf.standard.processor.StandardAttrappendTagProcessor
+[THYMELEAF]             * [* {th:method,data-th-method}] [990]: org.thymeleaf.spring5.processor.SpringMethodTagProcessor
+[THYMELEAF]             * [* {th:alt-title,data-th-alt-title}] [990]: org.thymeleaf.standard.processor.StandardAltTitleTagProcessor
+[THYMELEAF]             * [* {th:lang-xmllang,data-th-lang-xmllang}] [990]: org.thymeleaf.standard.processor.StandardLangXmlLangTagProcessor
+[THYMELEAF]             * [* {th:action,data-th-action}] [1000]: org.thymeleaf.spring5.processor.SpringActionTagProcessor
+[THYMELEAF]             * [* {th:href,data-th-href}] [1000]: org.thymeleaf.spring5.processor.SpringHrefTagProcessor
+[THYMELEAF]             * [* {th:src,data-th-src}] [1000]: org.thymeleaf.spring5.processor.SpringSrcTagProcessor
+[THYMELEAF]             * [* {th:nowrap,data-th-nowrap}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:selected,data-th-selected}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:pubdate,data-th-pubdate}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:seamless,data-th-seamless}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:controls,data-th-controls}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:readonly,data-th-readonly}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:reversed,data-th-reversed}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:autofocus,data-th-autofocus}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:defer,data-th-defer}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:novalidate,data-th-novalidate}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:multiple,data-th-multiple}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:declare,data-th-declare}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:checked,data-th-checked}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:required,data-th-required}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:default,data-th-default}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:disabled,data-th-disabled}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:async,data-th-async}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:open,data-th-open}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:autoplay,data-th-autoplay}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:loop,data-th-loop}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:formnovalidate,data-th-formnovalidate}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:hidden,data-th-hidden}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:ismap,data-th-ismap}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:scoped,data-th-scoped}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:onplay,data-th-onplay}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onselect,data-th-onselect}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onunload,data-th-onunload}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onsubmit,data-th-onsubmit}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:oncontextmenu,data-th-oncontextmenu}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onstalled,data-th-onstalled}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondrop,data-th-ondrop}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondragenter,data-th-ondragenter}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondragend,data-th-ondragend}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:oninvalid,data-th-oninvalid}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onabort,data-th-onabort}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondblclick,data-th-ondblclick}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmousemove,data-th-onmousemove}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ononline,data-th-ononline}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onbeforeprint,data-th-onbeforeprint}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onredo,data-th-onredo}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onhashchange,data-th-onhashchange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onreadystatechange,data-th-onreadystatechange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onload,data-th-onload}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onkeyup,data-th-onkeyup}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onformchange,data-th-onformchange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onbeforeunload,data-th-onbeforeunload}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onoffline,data-th-onoffline}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onshow,data-th-onshow}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onwaiting,data-th-onwaiting}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onkeydown,data-th-onkeydown}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onforminput,data-th-onforminput}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onafterprint,data-th-onafterprint}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondragstart,data-th-ondragstart}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onseeking,data-th-onseeking}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onreset,data-th-onreset}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:oncanplay,data-th-oncanplay}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ontimeupdate,data-th-ontimeupdate}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onclick,data-th-onclick}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onseeked,data-th-onseeked}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondragleave,data-th-ondragleave}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onfocus,data-th-onfocus}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onprogress,data-th-onprogress}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onplaying,data-th-onplaying}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onerror,data-th-onerror}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondurationchange,data-th-ondurationchange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onblur,data-th-onblur}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmessage,data-th-onmessage}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onemptied,data-th-onemptied}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmousewheel,data-th-onmousewheel}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondragover,data-th-ondragover}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onratechange,data-th-onratechange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onscroll,data-th-onscroll}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onpopstate,data-th-onpopstate}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onloadstart,data-th-onloadstart}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onstorage,data-th-onstorage}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onended,data-th-onended}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onkeypress,data-th-onkeypress}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:oninput,data-th-oninput}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onundo,data-th-onundo}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmouseover,data-th-onmouseover}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmouseout,data-th-onmouseout}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onloadeddata,data-th-onloadeddata}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onchange,data-th-onchange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:oncanplaythrough,data-th-oncanplaythrough}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onvolumechange,data-th-onvolumechange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onpause,data-th-onpause}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmouseup,data-th-onmouseup}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onresize,data-th-onresize}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onsuspend,data-th-onsuspend}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onloadedmetadata,data-th-onloadedmetadata}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmousedown,data-th-onmousedown}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondrag,data-th-ondrag}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:inline,data-th-inline}] [1000]: org.thymeleaf.standard.processor.StandardInlineHTMLTagProcessor
+[THYMELEAF]             * [* {th:type,data-th-type}] [1000]: org.thymeleaf.standard.processor.StandardNonRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:name,data-th-name}] [1000]: org.thymeleaf.standard.processor.StandardNonRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:keytype,data-th-keytype}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:optimum,data-th-optimum}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:radiogroup,data-th-radiogroup}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:wrap,data-th-wrap}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:manifest,data-th-manifest}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:media,data-th-media}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:cellpadding,data-th-cellpadding}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:size,data-th-size}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:sandbox,data-th-sandbox}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:id,data-th-id}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:min,data-th-min}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:datetime,data-th-datetime}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:data,data-th-data}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:class,data-th-class}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:placeholder,data-th-placeholder}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:form,data-th-form}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:marginheight,data-th-marginheight}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:for,data-th-for}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:summary,data-th-summary}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:poster,data-th-poster}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:srclang,data-th-srclang}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:maxlength,data-th-maxlength}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:charset,data-th-charset}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:rows,data-th-rows}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:kind,data-th-kind}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:title,data-th-title}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:usemap,data-th-usemap}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:lang,data-th-lang}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:rev,data-th-rev}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:rowspan,data-th-rowspan}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:accesskey,data-th-accesskey}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:preload,data-th-preload}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:frameborder,data-th-frameborder}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:spellcheck,data-th-spellcheck}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:abbr,data-th-abbr}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:low,data-th-low}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:bgcolor,data-th-bgcolor}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:high,data-th-high}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:dropzone,data-th-dropzone}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:frame,data-th-frame}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:align,data-th-align}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:scope,data-th-scope}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:icon,data-th-icon}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:hreflang,data-th-hreflang}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:audio,data-th-audio}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:alt,data-th-alt}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:codebase,data-th-codebase}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:rel,data-th-rel}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:cols,data-th-cols}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:codetype,data-th-codetype}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:max,data-th-max}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:scrolling,data-th-scrolling}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:draggable,data-th-draggable}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:step,data-th-step}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:classid,data-th-classid}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:archive,data-th-archive}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:content,data-th-content}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:target,data-th-target}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:border,data-th-border}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:hspace,data-th-hspace}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:style,data-th-style}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:longdesc,data-th-longdesc}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:pattern,data-th-pattern}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:sizes,data-th-sizes}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:accept-charset,data-th-accept-charset}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:list,data-th-list}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:tabindex,data-th-tabindex}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:formaction,data-th-formaction}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:height,data-th-height}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:label,data-th-label}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:challenge,data-th-challenge}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:marginwidth,data-th-marginwidth}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:dir,data-th-dir}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:span,data-th-span}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:vspace,data-th-vspace}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:http-equiv,data-th-http-equiv}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:axis,data-th-axis}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:rules,data-th-rules}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:formmethod,data-th-formmethod}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:background,data-th-background}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:formenctype,data-th-formenctype}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:contextmenu,data-th-contextmenu}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:accept,data-th-accept}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:formtarget,data-th-formtarget}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:colspan,data-th-colspan}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:scheme,data-th-scheme}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:cite,data-th-cite}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:start,data-th-start}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:cellspacing,data-th-cellspacing}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:enctype,data-th-enctype}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:valuetype,data-th-valuetype}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:contenteditable,data-th-contenteditable}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:standby,data-th-standby}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:autocomplete,data-th-autocomplete}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:compact,data-th-compact}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:headers,data-th-headers}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:width,data-th-width}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:xmlbase,data-th-xmlbase}] [1000]: org.thymeleaf.standard.processor.StandardXmlBaseTagProcessor
+[THYMELEAF]             * [* {th:xmllang,data-th-xmllang}] [1000]: org.thymeleaf.standard.processor.StandardXmlLangTagProcessor
+[THYMELEAF]             * [* {xmlns:th}] [1000]: org.thymeleaf.standard.processor.StandardXmlNsTagProcessor
+[THYMELEAF]             * [* {th:xmlspace,data-th-xmlspace}] [1000]: org.thymeleaf.standard.processor.StandardXmlSpaceTagProcessor
+[THYMELEAF]             * [{option} *] [1005]: org.thymeleaf.spring5.processor.SpringOptionInSelectFieldTagProcessor
+[THYMELEAF]             * [* {th:value,data-th-value}] [1010]: org.thymeleaf.spring5.processor.SpringValueTagProcessor
+[THYMELEAF]             * [* {th:classappend,data-th-classappend}] [1100]: org.thymeleaf.standard.processor.StandardClassappendTagProcessor
+[THYMELEAF]             * [* {th:styleappend,data-th-styleappend}] [1100]: org.thymeleaf.standard.processor.StandardStyleappendTagProcessor
+[THYMELEAF]             * [* {th:text,data-th-text}] [1300]: org.thymeleaf.standard.processor.StandardTextTagProcessor
+[THYMELEAF]             * [* {th:utext,data-th-utext}] [1400]: org.thymeleaf.standard.processor.StandardUtextTagProcessor
+[THYMELEAF]             * [* {th:fragment,data-th-fragment}] [1500]: org.thymeleaf.standard.processor.StandardFragmentTagProcessor
+[THYMELEAF]             * [* {th:assert,data-th-assert}] [1550]: org.thymeleaf.standard.processor.StandardAssertTagProcessor
+[THYMELEAF]             * [* {th:remove,data-th-remove}] [1600]: org.thymeleaf.standard.processor.StandardRemoveTagProcessor
+[THYMELEAF]             * [* {th:errors,data-th-errors}] [1700]: org.thymeleaf.spring5.processor.SpringErrorsTagProcessor
+[THYMELEAF]             * [{input} {th:field,data-th-field}] [1700]: org.thymeleaf.spring5.processor.SpringInputCheckboxFieldTagProcessor
+[THYMELEAF]             * [{input} {th:field,data-th-field}] [1700]: org.thymeleaf.spring5.processor.SpringInputFileFieldTagProcessor
+[THYMELEAF]             * [{input} {th:field,data-th-field}] [1700]: org.thymeleaf.spring5.processor.SpringInputGeneralFieldTagProcessor
+[THYMELEAF]             * [{input} {th:field,data-th-field}] [1700]: org.thymeleaf.spring5.processor.SpringInputPasswordFieldTagProcessor
+[THYMELEAF]             * [{input} {th:field,data-th-field}] [1700]: org.thymeleaf.spring5.processor.SpringInputRadioFieldTagProcessor
+[THYMELEAF]             * [{option} {th:field,data-th-field}] [1700]: org.thymeleaf.spring5.processor.SpringOptionFieldTagProcessor
+[THYMELEAF]             * [{select} {th:field,data-th-field}] [1700]: org.thymeleaf.spring5.processor.SpringSelectFieldTagProcessor
+[THYMELEAF]             * [{textarea} {th:field,data-th-field}] [1700]: org.thymeleaf.spring5.processor.SpringTextareaFieldTagProcessor
+[THYMELEAF]             * [* {th:uerrors,data-th-uerrors}] [1700]: org.thymeleaf.spring5.processor.SpringUErrorsTagProcessor
+[THYMELEAF]             * [* {th:errorclass,data-th-errorclass}] [1800]: org.thymeleaf.spring5.processor.SpringErrorClassTagProcessor
+[THYMELEAF]             * [* {th:ref,data-th-ref}] [10000]: org.thymeleaf.standard.processor.StandardRefAttributeTagProcessor
+[THYMELEAF]             * [{th:block,th-block} *] [100000]: org.thymeleaf.standard.processor.StandardBlockTagProcessor
+[THYMELEAF]             * [* th:*] [2147483647]: org.thymeleaf.standard.processor.StandardDefaultAttributesTagProcessor
+[THYMELEAF]         * Text Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningTextProcessor
+[THYMELEAF]         * DOCTYPE Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardTranslationDocTypeProcessor
+[THYMELEAF]         * CDATA Section Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningCDATASectionProcessor
+[THYMELEAF]         * Comment Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningCommentProcessor
+[THYMELEAF]             * [1100]: org.thymeleaf.standard.processor.StandardConditionalCommentProcessor
+[THYMELEAF]     * Processors for Template Mode: XML
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {th:include}] [100]: org.thymeleaf.standard.processor.StandardIncludeTagProcessor
+[THYMELEAF]             * [* {th:insert}] [100]: org.thymeleaf.standard.processor.StandardInsertTagProcessor
+[THYMELEAF]             * [* {th:replace}] [100]: org.thymeleaf.standard.processor.StandardReplaceTagProcessor
+[THYMELEAF]             * [* {th:substituteby}] [100]: org.thymeleaf.standard.processor.StandardSubstituteByTagProcessor
+[THYMELEAF]             * [* {th:each}] [200]: org.thymeleaf.standard.processor.StandardEachTagProcessor
+[THYMELEAF]             * [* {th:switch}] [250]: org.thymeleaf.standard.processor.StandardSwitchTagProcessor
+[THYMELEAF]             * [* {th:case}] [275]: org.thymeleaf.standard.processor.StandardCaseTagProcessor
+[THYMELEAF]             * [* {th:if}] [300]: org.thymeleaf.standard.processor.StandardIfTagProcessor
+[THYMELEAF]             * [* {th:unless}] [400]: org.thymeleaf.standard.processor.StandardUnlessTagProcessor
+[THYMELEAF]             * [* {th:object}] [500]: org.thymeleaf.standard.processor.StandardObjectTagProcessor
+[THYMELEAF]             * [* {th:with}] [600]: org.thymeleaf.standard.processor.StandardWithTagProcessor
+[THYMELEAF]             * [* {th:attr}] [700]: org.thymeleaf.standard.processor.StandardAttrTagProcessor
+[THYMELEAF]             * [* {th:attrprepend}] [800]: org.thymeleaf.standard.processor.StandardAttrprependTagProcessor
+[THYMELEAF]             * [* {th:attrappend}] [900]: org.thymeleaf.standard.processor.StandardAttrappendTagProcessor
+[THYMELEAF]             * [* {th:inline}] [1000]: org.thymeleaf.standard.processor.StandardInlineXMLTagProcessor
+[THYMELEAF]             * [* {xmlns:th}] [1000]: org.thymeleaf.standard.processor.StandardXmlNsTagProcessor
+[THYMELEAF]             * [* {th:text}] [1300]: org.thymeleaf.standard.processor.StandardTextTagProcessor
+[THYMELEAF]             * [* {th:utext}] [1400]: org.thymeleaf.standard.processor.StandardUtextTagProcessor
+[THYMELEAF]             * [* {th:fragment}] [1500]: org.thymeleaf.standard.processor.StandardFragmentTagProcessor
+[THYMELEAF]             * [* {th:assert}] [1550]: org.thymeleaf.standard.processor.StandardAssertTagProcessor
+[THYMELEAF]             * [* {th:remove}] [1600]: org.thymeleaf.standard.processor.StandardRemoveTagProcessor
+[THYMELEAF]             * [* {th:ref}] [10000]: org.thymeleaf.standard.processor.StandardRefAttributeTagProcessor
+[THYMELEAF]             * [{th:block} *] [100000]: org.thymeleaf.standard.processor.StandardBlockTagProcessor
+[THYMELEAF]             * [* th:*] [2147483647]: org.thymeleaf.standard.processor.StandardDefaultAttributesTagProcessor
+[THYMELEAF]         * Text Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningTextProcessor
+[THYMELEAF]         * CDATA Section Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningCDATASectionProcessor
+[THYMELEAF]         * Comment Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningCommentProcessor
+[THYMELEAF]     * Processors for Template Mode: TEXT
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {th:insert}] [100]: org.thymeleaf.standard.processor.StandardInsertTagProcessor
+[THYMELEAF]             * [* {th:replace}] [100]: org.thymeleaf.standard.processor.StandardReplaceTagProcessor
+[THYMELEAF]             * [* {th:each}] [200]: org.thymeleaf.standard.processor.StandardEachTagProcessor
+[THYMELEAF]             * [* {th:switch}] [250]: org.thymeleaf.standard.processor.StandardSwitchTagProcessor
+[THYMELEAF]             * [* {th:case}] [275]: org.thymeleaf.standard.processor.StandardCaseTagProcessor
+[THYMELEAF]             * [* {th:if}] [300]: org.thymeleaf.standard.processor.StandardIfTagProcessor
+[THYMELEAF]             * [* {th:unless}] [400]: org.thymeleaf.standard.processor.StandardUnlessTagProcessor
+[THYMELEAF]             * [* {th:object}] [500]: org.thymeleaf.standard.processor.StandardObjectTagProcessor
+[THYMELEAF]             * [* {th:with}] [600]: org.thymeleaf.standard.processor.StandardWithTagProcessor
+[THYMELEAF]             * [* {th:inline}] [1000]: org.thymeleaf.standard.processor.StandardInlineTextualTagProcessor
+[THYMELEAF]             * [* {th:text}] [1300]: org.thymeleaf.standard.processor.StandardTextTagProcessor
+[THYMELEAF]             * [* {th:utext}] [1400]: org.thymeleaf.standard.processor.StandardUtextTagProcessor
+[THYMELEAF]             * [* {th:assert}] [1550]: org.thymeleaf.standard.processor.StandardAssertTagProcessor
+[THYMELEAF]             * [* {th:remove}] [1600]: org.thymeleaf.standard.processor.StandardRemoveTagProcessor
+[THYMELEAF]             * [{th:block} *] [100000]: org.thymeleaf.standard.processor.StandardBlockTagProcessor
+[THYMELEAF]             * [* 100000] [org.thymeleaf.standard.processor.StandardBlockTagProcessor]: {}
+[THYMELEAF]         * Text Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningTextProcessor
+[THYMELEAF]     * Processors for Template Mode: JAVASCRIPT
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {th:insert}] [100]: org.thymeleaf.standard.processor.StandardInsertTagProcessor
+[THYMELEAF]             * [* {th:replace}] [100]: org.thymeleaf.standard.processor.StandardReplaceTagProcessor
+[THYMELEAF]             * [* {th:each}] [200]: org.thymeleaf.standard.processor.StandardEachTagProcessor
+[THYMELEAF]             * [* {th:switch}] [250]: org.thymeleaf.standard.processor.StandardSwitchTagProcessor
+[THYMELEAF]             * [* {th:case}] [275]: org.thymeleaf.standard.processor.StandardCaseTagProcessor
+[THYMELEAF]             * [* {th:if}] [300]: org.thymeleaf.standard.processor.StandardIfTagProcessor
+[THYMELEAF]             * [* {th:unless}] [400]: org.thymeleaf.standard.processor.StandardUnlessTagProcessor
+[THYMELEAF]             * [* {th:object}] [500]: org.thymeleaf.standard.processor.StandardObjectTagProcessor
+[THYMELEAF]             * [* {th:with}] [600]: org.thymeleaf.standard.processor.StandardWithTagProcessor
+[THYMELEAF]             * [* {th:inline}] [1000]: org.thymeleaf.standard.processor.StandardInlineTextualTagProcessor
+[THYMELEAF]             * [* {th:text}] [1300]: org.thymeleaf.standard.processor.StandardTextTagProcessor
+[THYMELEAF]             * [* {th:utext}] [1400]: org.thymeleaf.standard.processor.StandardUtextTagProcessor
+[THYMELEAF]             * [* {th:assert}] [1550]: org.thymeleaf.standard.processor.StandardAssertTagProcessor
+[THYMELEAF]             * [* {th:remove}] [1600]: org.thymeleaf.standard.processor.StandardRemoveTagProcessor
+[THYMELEAF]             * [{th:block} *] [100000]: org.thymeleaf.standard.processor.StandardBlockTagProcessor
+[THYMELEAF]             * [* 100000] [org.thymeleaf.standard.processor.StandardBlockTagProcessor]: {}
+[THYMELEAF]         * Text Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningTextProcessor
+[THYMELEAF]     * Processors for Template Mode: CSS
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {th:insert}] [100]: org.thymeleaf.standard.processor.StandardInsertTagProcessor
+[THYMELEAF]             * [* {th:replace}] [100]: org.thymeleaf.standard.processor.StandardReplaceTagProcessor
+[THYMELEAF]             * [* {th:each}] [200]: org.thymeleaf.standard.processor.StandardEachTagProcessor
+[THYMELEAF]             * [* {th:switch}] [250]: org.thymeleaf.standard.processor.StandardSwitchTagProcessor
+[THYMELEAF]             * [* {th:case}] [275]: org.thymeleaf.standard.processor.StandardCaseTagProcessor
+[THYMELEAF]             * [* {th:if}] [300]: org.thymeleaf.standard.processor.StandardIfTagProcessor
+[THYMELEAF]             * [* {th:unless}] [400]: org.thymeleaf.standard.processor.StandardUnlessTagProcessor
+[THYMELEAF]             * [* {th:object}] [500]: org.thymeleaf.standard.processor.StandardObjectTagProcessor
+[THYMELEAF]             * [* {th:with}] [600]: org.thymeleaf.standard.processor.StandardWithTagProcessor
+[THYMELEAF]             * [* {th:inline}] [1000]: org.thymeleaf.standard.processor.StandardInlineTextualTagProcessor
+[THYMELEAF]             * [* {th:text}] [1300]: org.thymeleaf.standard.processor.StandardTextTagProcessor
+[THYMELEAF]             * [* {th:utext}] [1400]: org.thymeleaf.standard.processor.StandardUtextTagProcessor
+[THYMELEAF]             * [* {th:assert}] [1550]: org.thymeleaf.standard.processor.StandardAssertTagProcessor
+[THYMELEAF]             * [* {th:remove}] [1600]: org.thymeleaf.standard.processor.StandardRemoveTagProcessor
+[THYMELEAF]             * [{th:block} *] [100000]: org.thymeleaf.standard.processor.StandardBlockTagProcessor
+[THYMELEAF]             * [* 100000] [org.thymeleaf.standard.processor.StandardBlockTagProcessor]: {}
+[THYMELEAF]         * Text Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningTextProcessor
+[THYMELEAF]     * Expression Objects:
+[THYMELEAF]         * #ctx
+[THYMELEAF]         * #root
+[THYMELEAF]         * #vars
+[THYMELEAF]         * #object
+[THYMELEAF]         * #locale
+[THYMELEAF]         * #request
+[THYMELEAF]         * #response
+[THYMELEAF]         * #session
+[THYMELEAF]         * #servletContext
+[THYMELEAF]         * #conversions
+[THYMELEAF]         * #uris
+[THYMELEAF]         * #calendars
+[THYMELEAF]         * #dates
+[THYMELEAF]         * #bools
+[THYMELEAF]         * #numbers
+[THYMELEAF]         * #objects
+[THYMELEAF]         * #strings
+[THYMELEAF]         * #arrays
+[THYMELEAF]         * #lists
+[THYMELEAF]         * #sets
+[THYMELEAF]         * #maps
+[THYMELEAF]         * #aggregates
+[THYMELEAF]         * #messages
+[THYMELEAF]         * #ids
+[THYMELEAF]         * #execInfo
+[THYMELEAF]         * #httpServletRequest
+[THYMELEAF]         * #httpSession
+[THYMELEAF]         * #fields
+[THYMELEAF]         * #themes
+[THYMELEAF]         * #mvc
+[THYMELEAF]         * #requestdatavalues
+[THYMELEAF]     * Execution Attributes:
+[THYMELEAF]         * "StandardExpressionParser": Standard Expression Parser
+[THYMELEAF]         * "StandardJavaScriptSerializer": org.thymeleaf.standard.serializer.StandardJavaScriptSerializer@352538e6
+[THYMELEAF]         * "StandardCSSSerializer": org.thymeleaf.standard.serializer.StandardCSSSerializer@41d2c327
+[THYMELEAF]         * "EnableSpringELCompiler": false
+[THYMELEAF]         * "StandardVariableExpressionEvaluator": SpringEL
+[THYMELEAF]         * "StandardConversionService": org.thymeleaf.spring5.expression.SpringStandardConversionService@37a1ead3
+[THYMELEAF] * Dialect [2 of 2]: java8time (org.thymeleaf.extras.java8time.dialect.Java8TimeDialect)
+[THYMELEAF]     * Expression Objects:
+[THYMELEAF]         * #temporals
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2020-03-22 21:20:40.861 [http-nio-8080-exec-10] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2020-03-22 21:20:59.826 [http-nio-8080-exec-8] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36
+2020-03-22 21:20:59.827 [http-nio-8080-exec-8] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /sign, 来路地址: 0:0:0:0:0:0:0:1
+2020-03-22 21:20:59.828 [http-nio-8080-exec-8] INFO  com.my.blog.website.utils.LogAspect - URL : http://localhost:8080/sign,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.IndexController.sign,ARGS : []
+2020-03-22 21:20:59.828 [http-nio-8080-exec-8] INFO  com.my.blog.website.utils.LogAspect - RESPONSE : themes/default/sign
+2020-03-22 21:20:59.829 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:20:59.829 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66f59950] was not registered for synchronization because synchronization is not active
+2020-03-22 21:20:59.829 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:20:59.830 [http-nio-8080-exec-8] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:20:59.830 [http-nio-8080-exec-8] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:20:59.830 [http-nio-8080-exec-8] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:20:59.830 [http-nio-8080-exec-8] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:20:59.831 [http-nio-8080-exec-8] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:20:59.831 [http-nio-8080-exec-8] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:20:59.832 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66f59950]
+2020-03-22 21:21:00.049 [http-nio-8080-exec-7] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36
+2020-03-22 21:21:00.049 [http-nio-8080-exec-7] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/images/bg/5.png, 来路地址: 0:0:0:0:0:0:0:1
+2020-03-22 21:21:00.074 [http-nio-8080-exec-6] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36
+2020-03-22 21:21:00.075 [http-nio-8080-exec-6] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/login, 来路地址: 0:0:0:0:0:0:0:1
+2020-03-22 21:21:00.086 [http-nio-8080-exec-6] INFO  com.my.blog.website.utils.LogAspect - URL : http://localhost:8080/admin/login,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.admin.AuthController.login,ARGS : []
+2020-03-22 21:21:00.093 [http-nio-8080-exec-6] INFO  com.my.blog.website.utils.LogAspect - RESPONSE : admin/login
+2020-03-22 21:21:00.183 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:00.183 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@563ce1a3] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:00.183 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:00.183 [http-nio-8080-exec-6] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:00.183 [http-nio-8080-exec-6] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:00.184 [http-nio-8080-exec-6] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:00.184 [http-nio-8080-exec-6] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:00.195 [http-nio-8080-exec-6] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:00.195 [http-nio-8080-exec-6] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:00.195 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@563ce1a3]
+2020-03-22 21:21:01.705 [http-nio-8080-exec-5] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36
+2020-03-22 21:21:01.705 [http-nio-8080-exec-5] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /sign, 来路地址: 0:0:0:0:0:0:0:1
+2020-03-22 21:21:01.705 [http-nio-8080-exec-5] INFO  com.my.blog.website.utils.LogAspect - URL : http://localhost:8080/sign,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.IndexController.sign,ARGS : []
+2020-03-22 21:21:01.706 [http-nio-8080-exec-5] INFO  com.my.blog.website.utils.LogAspect - RESPONSE : themes/default/sign
+2020-03-22 21:21:01.706 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:01.706 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@106a53eb] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:01.707 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:01.707 [http-nio-8080-exec-5] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:01.707 [http-nio-8080-exec-5] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:01.707 [http-nio-8080-exec-5] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:01.707 [http-nio-8080-exec-5] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:01.709 [http-nio-8080-exec-5] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:01.709 [http-nio-8080-exec-5] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:01.709 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@106a53eb]
+2020-03-22 21:21:02.014 [http-nio-8080-exec-4] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36
+2020-03-22 21:21:02.014 [http-nio-8080-exec-4] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/images/favicon.png, 来路地址: 0:0:0:0:0:0:0:1
+2020-03-22 21:21:02.019 [http-nio-8080-exec-3] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36
+2020-03-22 21:21:02.020 [http-nio-8080-exec-3] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/login, 来路地址: 0:0:0:0:0:0:0:1
+2020-03-22 21:21:02.021 [http-nio-8080-exec-3] INFO  com.my.blog.website.utils.LogAspect - URL : http://localhost:8080/admin/login,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.admin.AuthController.login,ARGS : []
+2020-03-22 21:21:02.021 [http-nio-8080-exec-3] INFO  com.my.blog.website.utils.LogAspect - RESPONSE : admin/login
+2020-03-22 21:21:02.023 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:02.023 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b0cd520] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:02.024 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:02.024 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:02.024 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:02.024 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:02.024 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:02.026 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:02.026 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:02.026 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b0cd520]
+2020-03-22 21:21:11.692 [http-nio-8080-exec-2] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36
+2020-03-22 21:21:11.693 [http-nio-8080-exec-2] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /sign, 来路地址: 0:0:0:0:0:0:0:1
+2020-03-22 21:21:11.695 [http-nio-8080-exec-2] INFO  com.my.blog.website.utils.LogAspect - URL : http://localhost:8080/sign,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.IndexController.doSign,ARGS : [yu, 111, 1111, org.apache.catalina.connector.RequestFacade@77ee59f3, org.apache.catalina.connector.ResponseFacade@293ffbd4]
+2020-03-22 21:21:11.699 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:11.699 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7de6f1a7] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:11.701 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:11.701 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.UserVoMapper.insertSelective - ==>  Preparing: insert into t_users ( username, password, email, screen_name, created, group_name ) values ( ?, ?, ?, ?, ?, ? ) 
+2020-03-22 21:21:11.701 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.UserVoMapper.insertSelective - ==>  Preparing: insert into t_users ( username, password, email, screen_name, created, group_name ) values ( ?, ?, ?, ?, ?, ? ) 
+2020-03-22 21:21:11.702 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.UserVoMapper.insertSelective - ==> Parameters: yu(String), 698d51a19d8a121ce581499d7b701668(String), 1111(String), yu(String), 1584883271(Integer), 111(String)
+2020-03-22 21:21:11.702 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.UserVoMapper.insertSelective - ==> Parameters: yu(String), 698d51a19d8a121ce581499d7b701668(String), 1111(String), yu(String), 1584883271(Integer), 111(String)
+2020-03-22 21:21:13.825 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.UserVoMapper.insertSelective - <==    Updates: 1
+2020-03-22 21:21:13.825 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.UserVoMapper.insertSelective - <==    Updates: 1
+2020-03-22 21:21:13.829 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7de6f1a7]
+2020-03-22 21:21:13.837 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:13.837 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c46f2a6] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:13.837 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:13.837 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.LogVoMapper.insert - ==>  Preparing: insert into t_logs (id, action, data, author_id, ip, created ) values (?, ?, ?, ?, ?, ? ) 
+2020-03-22 21:21:13.837 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.LogVoMapper.insert - ==>  Preparing: insert into t_logs (id, action, data, author_id, ip, created ) values (?, ?, ?, ?, ?, ? ) 
+2020-03-22 21:21:13.839 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.LogVoMapper.insert - ==> Parameters: null, 登录后台(String), null, 8(Integer), 0:0:0:0:0:0:0:1(String), 1584883273(Integer)
+2020-03-22 21:21:13.839 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.LogVoMapper.insert - ==> Parameters: null, 登录后台(String), null, 8(Integer), 0:0:0:0:0:0:0:1(String), 1584883273(Integer)
+2020-03-22 21:21:14.970 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.LogVoMapper.insert - <==    Updates: 1
+2020-03-22 21:21:14.970 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.LogVoMapper.insert - <==    Updates: 1
+2020-03-22 21:21:14.971 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c46f2a6]
+2020-03-22 21:21:14.971 [http-nio-8080-exec-2] INFO  com.my.blog.website.utils.LogAspect - RESPONSE : com.my.blog.website.model.Bo.RestResponseBo@40457142
+2020-03-22 21:21:15.192 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:15.192 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10943c72] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:15.193 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:15.193 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:15.193 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:15.194 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:15.194 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:15.195 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:15.195 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:15.195 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10943c72]
+2020-03-22 21:21:15.204 [http-nio-8080-exec-10] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36
+2020-03-22 21:21:15.204 [http-nio-8080-exec-10] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /sign, 来路地址: 0:0:0:0:0:0:0:1
+2020-03-22 21:21:15.205 [http-nio-8080-exec-10] INFO  com.my.blog.website.utils.LogAspect - URL : http://localhost:8080/sign,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.IndexController.doSign,ARGS : [yu, 111, 1111, org.apache.catalina.connector.RequestFacade@3b306e7b, org.apache.catalina.connector.ResponseFacade@b123bef]
+2020-03-22 21:21:15.205 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:15.205 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d2c142] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:15.206 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:15.206 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.UserVoMapper.insertSelective - ==>  Preparing: insert into t_users ( username, password, email, screen_name, created, group_name ) values ( ?, ?, ?, ?, ?, ? ) 
+2020-03-22 21:21:15.206 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.UserVoMapper.insertSelective - ==>  Preparing: insert into t_users ( username, password, email, screen_name, created, group_name ) values ( ?, ?, ?, ?, ?, ? ) 
+2020-03-22 21:21:15.206 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.UserVoMapper.insertSelective - ==> Parameters: yu(String), 698d51a19d8a121ce581499d7b701668(String), 1111(String), yu(String), 1584883275(Integer), 111(String)
+2020-03-22 21:21:15.206 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.UserVoMapper.insertSelective - ==> Parameters: yu(String), 698d51a19d8a121ce581499d7b701668(String), 1111(String), yu(String), 1584883275(Integer), 111(String)
+2020-03-22 21:21:15.589 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d2c142]
+2020-03-22 21:21:15.686 [http-nio-8080-exec-10] INFO  com.my.blog.website.utils.LogAspect - RESPONSE : com.my.blog.website.model.Bo.RestResponseBo@7c73231d
+2020-03-22 21:21:15.689 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:15.689 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d1fbab] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:15.690 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:15.690 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:15.690 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:15.691 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:15.691 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:15.692 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:15.692 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:15.692 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d1fbab]
+2020-03-22 21:21:15.802 [http-nio-8080-exec-9] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36
+2020-03-22 21:21:15.803 [http-nio-8080-exec-9] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /, 来路地址: 0:0:0:0:0:0:0:1
+2020-03-22 21:21:15.803 [http-nio-8080-exec-9] INFO  com.my.blog.website.utils.LogAspect - URL : http://localhost:8080/,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.IndexController.index,ARGS : [org.apache.catalina.connector.RequestFacade@3b306e7b, 6]
+2020-03-22 21:21:15.804 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:15.804 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67768b0c] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:15.805 [http-nio-8080-exec-9] DEBUG SQL_CACHE - Cache Hit Ratio [SQL_CACHE]: 0.5
+2020-03-22 21:21:15.807 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:15.807 [http-nio-8080-exec-9] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_contents WHERE (type = ? AND status = ?) 
+2020-03-22 21:21:15.807 [http-nio-8080-exec-9] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_contents WHERE (type = ? AND status = ?) 
+2020-03-22 21:21:15.807 [http-nio-8080-exec-9] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: post(String), publish(String)
+2020-03-22 21:21:15.807 [http-nio-8080-exec-9] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: post(String), publish(String)
+2020-03-22 21:21:15.835 [http-nio-8080-exec-9] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2020-03-22 21:21:15.835 [http-nio-8080-exec-9] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2020-03-22 21:21:15.836 [http-nio-8080-exec-9] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select cid, title, slug, created, modified, author_id, type, status, tags, categories, hits, comments_num, allow_comment, allow_ping, allow_feed , content from t_contents WHERE ( type = ? and status = ? ) order by created desc LIMIT ? 
+2020-03-22 21:21:15.836 [http-nio-8080-exec-9] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select cid, title, slug, created, modified, author_id, type, status, tags, categories, hits, comments_num, allow_comment, allow_ping, allow_feed , content from t_contents WHERE ( type = ? and status = ? ) order by created desc LIMIT ? 
+2020-03-22 21:21:15.837 [http-nio-8080-exec-9] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - ==> Parameters: post(String), publish(String), 6(Integer)
+2020-03-22 21:21:15.837 [http-nio-8080-exec-9] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - ==> Parameters: post(String), publish(String), 6(Integer)
+2020-03-22 21:21:15.846 [http-nio-8080-exec-9] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - <==      Total: 1
+2020-03-22 21:21:15.846 [http-nio-8080-exec-9] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - <==      Total: 1
+2020-03-22 21:21:15.846 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67768b0c]
+2020-03-22 21:21:15.846 [http-nio-8080-exec-9] INFO  com.my.blog.website.utils.LogAspect - RESPONSE : themes/default/index
+2020-03-22 21:21:15.847 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:15.847 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf1a35f] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:15.848 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:15.848 [http-nio-8080-exec-9] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:15.848 [http-nio-8080-exec-9] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:15.848 [http-nio-8080-exec-9] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:15.848 [http-nio-8080-exec-9] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:15.849 [http-nio-8080-exec-9] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:15.849 [http-nio-8080-exec-9] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:15.850 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bf1a35f]
+2020-03-22 21:21:15.995 [http-nio-8080-exec-8] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36
+2020-03-22 21:21:15.995 [http-nio-8080-exec-8] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /user/img/favicon.png, 来路地址: 0:0:0:0:0:0:0:1
+2020-03-22 21:21:16.020 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:16.021 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@478bdf1d] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:16.022 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:16.022 [http-nio-8080-exec-8] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:16.022 [http-nio-8080-exec-8] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:16.023 [http-nio-8080-exec-8] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:16.023 [http-nio-8080-exec-8] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:16.026 [http-nio-8080-exec-8] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:16.026 [http-nio-8080-exec-8] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:16.027 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@478bdf1d]
+2020-03-22 21:21:19.837 [http-nio-8080-exec-7] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36
+2020-03-22 21:21:19.837 [http-nio-8080-exec-7] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /links, 来路地址: 0:0:0:0:0:0:0:1
+2020-03-22 21:21:19.837 [http-nio-8080-exec-7] INFO  com.my.blog.website.utils.LogAspect - URL : http://localhost:8080/links,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.IndexController.links,ARGS : [org.apache.catalina.connector.RequestFacade@3b306e7b]
+2020-03-22 21:21:19.879 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:19.879 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d6542f0] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:19.882 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:19.883 [http-nio-8080-exec-7] DEBUG com.my.blog.website.dao.MetaVoMapper.selectByExample - ==>  Preparing: select mid, name, slug, type, description, sort, parent from t_metas WHERE ( type = ? ) order by sort desc, mid desc 
+2020-03-22 21:21:19.883 [http-nio-8080-exec-7] DEBUG com.my.blog.website.dao.MetaVoMapper.selectByExample - ==>  Preparing: select mid, name, slug, type, description, sort, parent from t_metas WHERE ( type = ? ) order by sort desc, mid desc 
+2020-03-22 21:21:19.883 [http-nio-8080-exec-7] DEBUG com.my.blog.website.dao.MetaVoMapper.selectByExample - ==> Parameters: link(String)
+2020-03-22 21:21:19.883 [http-nio-8080-exec-7] DEBUG com.my.blog.website.dao.MetaVoMapper.selectByExample - ==> Parameters: link(String)
+2020-03-22 21:21:20.192 [http-nio-8080-exec-7] DEBUG com.my.blog.website.dao.MetaVoMapper.selectByExample - <==      Total: 1
+2020-03-22 21:21:20.192 [http-nio-8080-exec-7] DEBUG com.my.blog.website.dao.MetaVoMapper.selectByExample - <==      Total: 1
+2020-03-22 21:21:20.193 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d6542f0]
+2020-03-22 21:21:20.193 [http-nio-8080-exec-7] INFO  com.my.blog.website.utils.LogAspect - RESPONSE : themes/default/links
+2020-03-22 21:21:20.194 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:20.195 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@22a07653] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:20.196 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:20.197 [http-nio-8080-exec-7] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:20.197 [http-nio-8080-exec-7] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:20.197 [http-nio-8080-exec-7] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:20.197 [http-nio-8080-exec-7] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:20.205 [http-nio-8080-exec-7] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:20.205 [http-nio-8080-exec-7] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:20.206 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@22a07653]
+2020-03-22 21:21:27.183 [http-nio-8080-exec-5] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36
+2020-03-22 21:21:27.183 [http-nio-8080-exec-5] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/login, 来路地址: 0:0:0:0:0:0:0:1
+2020-03-22 21:21:27.184 [http-nio-8080-exec-5] INFO  com.my.blog.website.utils.LogAspect - URL : http://localhost:8080/admin/login,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.admin.AuthController.login,ARGS : []
+2020-03-22 21:21:27.184 [http-nio-8080-exec-5] INFO  com.my.blog.website.utils.LogAspect - RESPONSE : admin/login
+2020-03-22 21:21:27.185 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:27.185 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d2740bf] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:27.186 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:27.187 [http-nio-8080-exec-5] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:27.187 [http-nio-8080-exec-5] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:27.187 [http-nio-8080-exec-5] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:27.187 [http-nio-8080-exec-5] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:27.190 [http-nio-8080-exec-5] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:27.190 [http-nio-8080-exec-5] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:27.191 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d2740bf]
+2020-03-22 21:21:27.537 [http-nio-8080-exec-4] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36
+2020-03-22 21:21:27.538 [http-nio-8080-exec-4] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/images/bg/2.png, 来路地址: 0:0:0:0:0:0:0:1
+2020-03-22 21:21:27.755 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:27.755 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@22c23679] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:27.756 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:27.756 [http-nio-8080-exec-4] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:27.756 [http-nio-8080-exec-4] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:27.756 [http-nio-8080-exec-4] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:27.756 [http-nio-8080-exec-4] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:27.758 [http-nio-8080-exec-4] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:27.758 [http-nio-8080-exec-4] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:27.759 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@22c23679]
+2020-03-22 21:21:32.272 [http-nio-8080-exec-3] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36
+2020-03-22 21:21:32.273 [http-nio-8080-exec-3] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /login, 来路地址: 0:0:0:0:0:0:0:1
+2020-03-22 21:21:32.274 [http-nio-8080-exec-3] INFO  com.my.blog.website.utils.LogAspect - URL : http://localhost:8080/login,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.IndexController.doLogin,ARGS : [admin, 123123, on, org.apache.catalina.connector.RequestFacade@3b306e7b, org.apache.catalina.connector.ResponseFacade@b123bef]
+2020-03-22 21:21:32.279 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:32.279 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@295e4861] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:32.281 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:32.281 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.UserVoMapper.countByExample - ==>  Preparing: select count(*) from t_users WHERE ( username = ? ) 
+2020-03-22 21:21:32.281 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.UserVoMapper.countByExample - ==>  Preparing: select count(*) from t_users WHERE ( username = ? ) 
+2020-03-22 21:21:32.282 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.UserVoMapper.countByExample - ==> Parameters: admin(String)
+2020-03-22 21:21:32.282 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.UserVoMapper.countByExample - ==> Parameters: admin(String)
+2020-03-22 21:21:32.283 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.UserVoMapper.countByExample - <==      Total: 1
+2020-03-22 21:21:32.283 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.UserVoMapper.countByExample - <==      Total: 1
+2020-03-22 21:21:32.283 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@295e4861]
+2020-03-22 21:21:32.284 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:32.284 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a1c7278] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:32.285 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:32.285 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.UserVoMapper.selectByExample - ==>  Preparing: select uid, username, password, email, home_url, screen_name, created, activated, logged, group_name from t_users WHERE ( username = ? and password = ? ) 
+2020-03-22 21:21:32.285 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.UserVoMapper.selectByExample - ==>  Preparing: select uid, username, password, email, home_url, screen_name, created, activated, logged, group_name from t_users WHERE ( username = ? and password = ? ) 
+2020-03-22 21:21:32.285 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.UserVoMapper.selectByExample - ==> Parameters: admin(String), 4297f44b13955235245b2497399d7a93(String)
+2020-03-22 21:21:32.285 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.UserVoMapper.selectByExample - ==> Parameters: admin(String), 4297f44b13955235245b2497399d7a93(String)
+2020-03-22 21:21:32.404 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.UserVoMapper.selectByExample - <==      Total: 1
+2020-03-22 21:21:32.404 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.UserVoMapper.selectByExample - <==      Total: 1
+2020-03-22 21:21:32.404 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a1c7278]
+2020-03-22 21:21:32.412 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:32.412 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a7a1c07] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:32.412 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:32.412 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.LogVoMapper.insert - ==>  Preparing: insert into t_logs (id, action, data, author_id, ip, created ) values (?, ?, ?, ?, ?, ? ) 
+2020-03-22 21:21:32.412 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.LogVoMapper.insert - ==>  Preparing: insert into t_logs (id, action, data, author_id, ip, created ) values (?, ?, ?, ?, ?, ? ) 
+2020-03-22 21:21:32.412 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.LogVoMapper.insert - ==> Parameters: null, 登录后台(String), null, 1(Integer), 0:0:0:0:0:0:0:1(String), 1584883292(Integer)
+2020-03-22 21:21:32.412 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.LogVoMapper.insert - ==> Parameters: null, 登录后台(String), null, 1(Integer), 0:0:0:0:0:0:0:1(String), 1584883292(Integer)
+2020-03-22 21:21:32.612 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.LogVoMapper.insert - <==    Updates: 1
+2020-03-22 21:21:32.612 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.LogVoMapper.insert - <==    Updates: 1
+2020-03-22 21:21:32.614 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a7a1c07]
+2020-03-22 21:21:32.614 [http-nio-8080-exec-3] INFO  com.my.blog.website.utils.LogAspect - RESPONSE : com.my.blog.website.model.Bo.RestResponseBo@fc82971
+2020-03-22 21:21:32.617 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:32.618 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@558896ab] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:32.619 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:32.620 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:32.620 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:32.620 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:32.620 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:32.622 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:32.622 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:32.623 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@558896ab]
+2020-03-22 21:21:32.639 [http-nio-8080-exec-2] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36
+2020-03-22 21:21:32.639 [http-nio-8080-exec-2] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/index, 来路地址: 0:0:0:0:0:0:0:1
+2020-03-22 21:21:32.640 [http-nio-8080-exec-2] INFO  com.my.blog.website.utils.LogAspect - URL : http://localhost:8080/admin/index,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.admin.IndexController.index,ARGS : [org.apache.catalina.connector.RequestFacade@3b306e7b]
+2020-03-22 21:21:32.643 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:32.643 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c8ac058]
+2020-03-22 21:21:32.650 [http-nio-8080-exec-2] DEBUG SQL_CACHE - Cache Hit Ratio [SQL_CACHE]: 0.3333333333333333
+2020-03-22 21:21:32.655 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will be managed by Spring
+2020-03-22 21:21:32.655 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_comments 
+2020-03-22 21:21:32.655 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_comments 
+2020-03-22 21:21:32.656 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: 
+2020-03-22 21:21:32.656 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: 
+2020-03-22 21:21:34.221 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2020-03-22 21:21:34.221 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2020-03-22 21:21:34.222 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select coid, cid, created, author, author_id, owner_id, mail, url, ip, agent, type, status, parent , content from t_comments order by created desc LIMIT ? 
+2020-03-22 21:21:34.222 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select coid, cid, created, author, author_id, owner_id, mail, url, ip, agent, type, status, parent , content from t_comments order by created desc LIMIT ? 
+2020-03-22 21:21:34.223 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - ==> Parameters: 5(Integer)
+2020-03-22 21:21:34.223 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - ==> Parameters: 5(Integer)
+2020-03-22 21:21:34.235 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - <==      Total: 4
+2020-03-22 21:21:34.235 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - <==      Total: 4
+2020-03-22 21:21:34.236 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c8ac058]
+2020-03-22 21:21:34.237 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c8ac058] from current transaction
+2020-03-22 21:21:34.238 [http-nio-8080-exec-2] DEBUG SQL_CACHE - Cache Hit Ratio [SQL_CACHE]: 0.25
+2020-03-22 21:21:34.240 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_contents WHERE (status = ? AND type = ?) 
+2020-03-22 21:21:34.240 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_contents WHERE (status = ? AND type = ?) 
+2020-03-22 21:21:34.240 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample_COUNT - ==> Parameters: publish(String), post(String)
+2020-03-22 21:21:34.240 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample_COUNT - ==> Parameters: publish(String), post(String)
+2020-03-22 21:21:34.242 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample_COUNT - <==      Total: 1
+2020-03-22 21:21:34.242 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample_COUNT - <==      Total: 1
+2020-03-22 21:21:34.243 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample - ==>  Preparing: select cid, title, slug, created, modified, author_id, type, status, tags, categories, hits, comments_num, allow_comment, allow_ping, allow_feed from t_contents WHERE ( status = ? and type = ? ) order by created desc LIMIT ? 
+2020-03-22 21:21:34.243 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample - ==>  Preparing: select cid, title, slug, created, modified, author_id, type, status, tags, categories, hits, comments_num, allow_comment, allow_ping, allow_feed from t_contents WHERE ( status = ? and type = ? ) order by created desc LIMIT ? 
+2020-03-22 21:21:34.243 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample - ==> Parameters: publish(String), post(String), 5(Integer)
+2020-03-22 21:21:34.243 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample - ==> Parameters: publish(String), post(String), 5(Integer)
+2020-03-22 21:21:34.245 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample - <==      Total: 1
+2020-03-22 21:21:34.245 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample - <==      Total: 1
+2020-03-22 21:21:34.246 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c8ac058]
+2020-03-22 21:21:34.246 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c8ac058] from current transaction
+2020-03-22 21:21:34.247 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.ContentVoMapper.countByExample - ==>  Preparing: select count(*) from t_contents WHERE ( type = ? and status = ? ) 
+2020-03-22 21:21:34.247 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.ContentVoMapper.countByExample - ==>  Preparing: select count(*) from t_contents WHERE ( type = ? and status = ? ) 
+2020-03-22 21:21:34.248 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.ContentVoMapper.countByExample - ==> Parameters: post(String), publish(String)
+2020-03-22 21:21:34.248 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.ContentVoMapper.countByExample - ==> Parameters: post(String), publish(String)
+2020-03-22 21:21:34.249 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.ContentVoMapper.countByExample - <==      Total: 1
+2020-03-22 21:21:34.249 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.ContentVoMapper.countByExample - <==      Total: 1
+2020-03-22 21:21:34.249 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c8ac058]
+2020-03-22 21:21:34.249 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c8ac058] from current transaction
+2020-03-22 21:21:34.250 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.CommentVoMapper.countByExample - ==>  Preparing: select count(*) from t_comments 
+2020-03-22 21:21:34.250 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.CommentVoMapper.countByExample - ==>  Preparing: select count(*) from t_comments 
+2020-03-22 21:21:34.250 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.CommentVoMapper.countByExample - ==> Parameters: 
+2020-03-22 21:21:34.250 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.CommentVoMapper.countByExample - ==> Parameters: 
+2020-03-22 21:21:34.280 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.CommentVoMapper.countByExample - <==      Total: 1
+2020-03-22 21:21:34.280 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.CommentVoMapper.countByExample - <==      Total: 1
+2020-03-22 21:21:34.280 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c8ac058]
+2020-03-22 21:21:34.280 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c8ac058] from current transaction
+2020-03-22 21:21:34.283 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.AttachVoMapper.countByExample - ==>  Preparing: select count(*) from t_attach 
+2020-03-22 21:21:34.283 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.AttachVoMapper.countByExample - ==>  Preparing: select count(*) from t_attach 
+2020-03-22 21:21:34.283 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.AttachVoMapper.countByExample - ==> Parameters: 
+2020-03-22 21:21:34.283 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.AttachVoMapper.countByExample - ==> Parameters: 
+2020-03-22 21:21:34.375 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.AttachVoMapper.countByExample - <==      Total: 1
+2020-03-22 21:21:34.375 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.AttachVoMapper.countByExample - <==      Total: 1
+2020-03-22 21:21:34.376 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c8ac058]
+2020-03-22 21:21:34.376 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c8ac058] from current transaction
+2020-03-22 21:21:34.376 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.MetaVoMapper.countByExample - ==>  Preparing: select count(*) from t_metas WHERE ( type = ? ) 
+2020-03-22 21:21:34.376 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.MetaVoMapper.countByExample - ==>  Preparing: select count(*) from t_metas WHERE ( type = ? ) 
+2020-03-22 21:21:34.377 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.MetaVoMapper.countByExample - ==> Parameters: link(String)
+2020-03-22 21:21:34.377 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.MetaVoMapper.countByExample - ==> Parameters: link(String)
+2020-03-22 21:21:34.378 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.MetaVoMapper.countByExample - <==      Total: 1
+2020-03-22 21:21:34.378 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.MetaVoMapper.countByExample - <==      Total: 1
+2020-03-22 21:21:34.378 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c8ac058]
+2020-03-22 21:21:34.379 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c8ac058] from current transaction
+2020-03-22 21:21:34.381 [http-nio-8080-exec-2] DEBUG SQL_CACHE - Cache Hit Ratio [SQL_CACHE]: 0.2
+2020-03-22 21:21:34.382 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_logs 
+2020-03-22 21:21:34.382 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_logs 
+2020-03-22 21:21:34.382 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample_COUNT - ==> Parameters: 
+2020-03-22 21:21:34.382 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample_COUNT - ==> Parameters: 
+2020-03-22 21:21:34.419 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample_COUNT - <==      Total: 1
+2020-03-22 21:21:34.419 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample_COUNT - <==      Total: 1
+2020-03-22 21:21:34.419 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample - ==>  Preparing: select id, action, data, author_id, ip, created from t_logs order by id desc LIMIT ? 
+2020-03-22 21:21:34.419 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample - ==>  Preparing: select id, action, data, author_id, ip, created from t_logs order by id desc LIMIT ? 
+2020-03-22 21:21:34.420 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample - ==> Parameters: 5(Integer)
+2020-03-22 21:21:34.420 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample - ==> Parameters: 5(Integer)
+2020-03-22 21:21:34.432 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample - <==      Total: 5
+2020-03-22 21:21:34.432 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample - <==      Total: 5
+2020-03-22 21:21:34.432 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c8ac058]
+2020-03-22 21:21:34.432 [http-nio-8080-exec-2] INFO  com.my.blog.website.utils.LogAspect - RESPONSE : admin/index
+2020-03-22 21:21:34.433 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c8ac058]
+2020-03-22 21:21:34.433 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c8ac058]
+2020-03-22 21:21:34.434 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c8ac058]
+2020-03-22 21:21:34.455 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:34.455 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5f2c25d1] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:34.456 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:34.456 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:34.456 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:34.456 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:34.456 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:34.457 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:34.457 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:34.458 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5f2c25d1]
+2020-03-22 21:21:37.249 [http-nio-8080-exec-10] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36
+2020-03-22 21:21:37.249 [http-nio-8080-exec-10] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/setting, 来路地址: 0:0:0:0:0:0:0:1
+2020-03-22 21:21:37.250 [http-nio-8080-exec-10] INFO  com.my.blog.website.utils.LogAspect - URL : http://localhost:8080/admin/setting,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.admin.SettingController.setting,ARGS : [org.apache.catalina.connector.RequestFacade@3b306e7b]
+2020-03-22 21:21:37.255 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:37.255 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6705249f] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:37.258 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:37.258 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByExample - ==>  Preparing: select name, value, description from t_options 
+2020-03-22 21:21:37.258 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByExample - ==>  Preparing: select name, value, description from t_options 
+2020-03-22 21:21:37.259 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByExample - ==> Parameters: 
+2020-03-22 21:21:37.259 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByExample - ==> Parameters: 
+2020-03-22 21:21:37.317 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByExample - <==      Total: 9
+2020-03-22 21:21:37.317 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByExample - <==      Total: 9
+2020-03-22 21:21:37.318 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6705249f]
+2020-03-22 21:21:37.318 [http-nio-8080-exec-10] INFO  com.my.blog.website.utils.LogAspect - RESPONSE : admin/setting
+2020-03-22 21:21:37.318 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:37.318 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67c9a073] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:37.319 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:37.319 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:37.319 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:37.319 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:37.319 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:37.336 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:37.336 [http-nio-8080-exec-10] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:37.336 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@67c9a073]
+2020-03-22 21:21:37.899 [http-nio-8080-exec-9] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36
+2020-03-22 21:21:37.899 [http-nio-8080-exec-9] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/links, 来路地址: 0:0:0:0:0:0:0:1
+2020-03-22 21:21:37.900 [http-nio-8080-exec-9] INFO  com.my.blog.website.utils.LogAspect - URL : http://localhost:8080/admin/links,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.admin.LinksController.index,ARGS : [org.apache.catalina.connector.RequestFacade@3b306e7b]
+2020-03-22 21:21:37.905 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:37.905 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@187ddba9] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:37.907 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:37.907 [http-nio-8080-exec-9] DEBUG com.my.blog.website.dao.MetaVoMapper.selectByExample - ==>  Preparing: select mid, name, slug, type, description, sort, parent from t_metas WHERE ( type = ? ) order by sort desc, mid desc 
+2020-03-22 21:21:37.907 [http-nio-8080-exec-9] DEBUG com.my.blog.website.dao.MetaVoMapper.selectByExample - ==>  Preparing: select mid, name, slug, type, description, sort, parent from t_metas WHERE ( type = ? ) order by sort desc, mid desc 
+2020-03-22 21:21:37.907 [http-nio-8080-exec-9] DEBUG com.my.blog.website.dao.MetaVoMapper.selectByExample - ==> Parameters: link(String)
+2020-03-22 21:21:37.907 [http-nio-8080-exec-9] DEBUG com.my.blog.website.dao.MetaVoMapper.selectByExample - ==> Parameters: link(String)
+2020-03-22 21:21:37.909 [http-nio-8080-exec-9] DEBUG com.my.blog.website.dao.MetaVoMapper.selectByExample - <==      Total: 1
+2020-03-22 21:21:37.909 [http-nio-8080-exec-9] DEBUG com.my.blog.website.dao.MetaVoMapper.selectByExample - <==      Total: 1
+2020-03-22 21:21:37.909 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@187ddba9]
+2020-03-22 21:21:37.910 [http-nio-8080-exec-9] INFO  com.my.blog.website.utils.LogAspect - RESPONSE : admin/links
+2020-03-22 21:21:37.910 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:37.910 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@333bd02] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:37.911 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:37.911 [http-nio-8080-exec-9] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:37.911 [http-nio-8080-exec-9] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:37.912 [http-nio-8080-exec-9] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:37.912 [http-nio-8080-exec-9] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:37.913 [http-nio-8080-exec-9] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:37.913 [http-nio-8080-exec-9] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:37.914 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@333bd02]
+2020-03-22 21:21:38.385 [http-nio-8080-exec-8] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36
+2020-03-22 21:21:38.385 [http-nio-8080-exec-8] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/attach, 来路地址: 0:0:0:0:0:0:0:1
+2020-03-22 21:21:38.386 [http-nio-8080-exec-8] INFO  com.my.blog.website.utils.LogAspect - URL : http://localhost:8080/admin/attach,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.admin.AttachController.index,ARGS : [org.apache.catalina.connector.RequestFacade@3b306e7b, 1, 12]
+2020-03-22 21:21:38.394 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:38.394 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12b84a6a] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:38.394 [http-nio-8080-exec-8] DEBUG SQL_CACHE - Cache Hit Ratio [SQL_CACHE]: 0.16666666666666666
+2020-03-22 21:21:38.396 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:38.396 [http-nio-8080-exec-8] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_attach 
+2020-03-22 21:21:38.396 [http-nio-8080-exec-8] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_attach 
+2020-03-22 21:21:38.397 [http-nio-8080-exec-8] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample_COUNT - ==> Parameters: 
+2020-03-22 21:21:38.397 [http-nio-8080-exec-8] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample_COUNT - ==> Parameters: 
+2020-03-22 21:21:38.398 [http-nio-8080-exec-8] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample_COUNT - <==      Total: 1
+2020-03-22 21:21:38.398 [http-nio-8080-exec-8] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample_COUNT - <==      Total: 1
+2020-03-22 21:21:38.398 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12b84a6a]
+2020-03-22 21:21:38.398 [http-nio-8080-exec-8] INFO  com.my.blog.website.utils.LogAspect - RESPONSE : admin/attach
+2020-03-22 21:21:38.399 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:38.399 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@589d4d3b] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:38.400 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:38.400 [http-nio-8080-exec-8] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:38.400 [http-nio-8080-exec-8] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:38.400 [http-nio-8080-exec-8] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:38.400 [http-nio-8080-exec-8] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:38.449 [http-nio-8080-exec-8] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:38.449 [http-nio-8080-exec-8] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:38.450 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@589d4d3b]
+2020-03-22 21:21:38.999 [http-nio-8080-exec-7] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36
+2020-03-22 21:21:38.999 [http-nio-8080-exec-7] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/category, 来路地址: 0:0:0:0:0:0:0:1
+2020-03-22 21:21:39.000 [http-nio-8080-exec-7] INFO  com.my.blog.website.utils.LogAspect - URL : http://localhost:8080/admin/category,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.admin.CategoryController.index,ARGS : [org.apache.catalina.connector.RequestFacade@3b306e7b]
+2020-03-22 21:21:39.246 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:39.247 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a20ad3] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:39.247 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:39.247 [http-nio-8080-exec-7] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - ==>  Preparing: select a.*, count(b.cid) as count from t_metas a left join `t_relationships` b on a.mid = b.mid where a.type = ? group by a.mid order by ? limit ? 
+2020-03-22 21:21:39.247 [http-nio-8080-exec-7] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - ==>  Preparing: select a.*, count(b.cid) as count from t_metas a left join `t_relationships` b on a.mid = b.mid where a.type = ? group by a.mid order by ? limit ? 
+2020-03-22 21:21:39.247 [http-nio-8080-exec-7] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - ==> Parameters: category(String), count desc, a.mid desc(String), 9999(Integer)
+2020-03-22 21:21:39.247 [http-nio-8080-exec-7] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - ==> Parameters: category(String), count desc, a.mid desc(String), 9999(Integer)
+2020-03-22 21:21:39.539 [http-nio-8080-exec-7] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - <==      Total: 2
+2020-03-22 21:21:39.539 [http-nio-8080-exec-7] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - <==      Total: 2
+2020-03-22 21:21:39.540 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a20ad3]
+2020-03-22 21:21:39.540 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:39.541 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@aa9548d] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:39.541 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:39.542 [http-nio-8080-exec-7] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - ==>  Preparing: select a.*, count(b.cid) as count from t_metas a left join `t_relationships` b on a.mid = b.mid where a.type = ? group by a.mid order by ? limit ? 
+2020-03-22 21:21:39.542 [http-nio-8080-exec-7] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - ==>  Preparing: select a.*, count(b.cid) as count from t_metas a left join `t_relationships` b on a.mid = b.mid where a.type = ? group by a.mid order by ? limit ? 
+2020-03-22 21:21:39.544 [http-nio-8080-exec-7] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - ==> Parameters: tag(String), count desc, a.mid desc(String), 9999(Integer)
+2020-03-22 21:21:39.544 [http-nio-8080-exec-7] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - ==> Parameters: tag(String), count desc, a.mid desc(String), 9999(Integer)
+2020-03-22 21:21:39.547 [http-nio-8080-exec-7] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - <==      Total: 0
+2020-03-22 21:21:39.547 [http-nio-8080-exec-7] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - <==      Total: 0
+2020-03-22 21:21:39.548 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@aa9548d]
+2020-03-22 21:21:39.548 [http-nio-8080-exec-7] INFO  com.my.blog.website.utils.LogAspect - RESPONSE : admin/category
+2020-03-22 21:21:39.549 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:39.549 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@15ae414e] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:39.550 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:39.550 [http-nio-8080-exec-7] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:39.550 [http-nio-8080-exec-7] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:39.551 [http-nio-8080-exec-7] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:39.551 [http-nio-8080-exec-7] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:39.552 [http-nio-8080-exec-7] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:39.552 [http-nio-8080-exec-7] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:39.552 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@15ae414e]
+2020-03-22 21:21:39.796 [http-nio-8080-exec-6] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36
+2020-03-22 21:21:39.796 [http-nio-8080-exec-6] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/category, 来路地址: 0:0:0:0:0:0:0:1
+2020-03-22 21:21:39.796 [http-nio-8080-exec-6] INFO  com.my.blog.website.utils.LogAspect - URL : http://localhost:8080/admin/category,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.admin.CategoryController.index,ARGS : [org.apache.catalina.connector.RequestFacade@3b306e7b]
+2020-03-22 21:21:39.796 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:39.797 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a9013d6] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:39.797 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:39.797 [http-nio-8080-exec-6] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - ==>  Preparing: select a.*, count(b.cid) as count from t_metas a left join `t_relationships` b on a.mid = b.mid where a.type = ? group by a.mid order by ? limit ? 
+2020-03-22 21:21:39.797 [http-nio-8080-exec-6] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - ==>  Preparing: select a.*, count(b.cid) as count from t_metas a left join `t_relationships` b on a.mid = b.mid where a.type = ? group by a.mid order by ? limit ? 
+2020-03-22 21:21:39.798 [http-nio-8080-exec-6] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - ==> Parameters: category(String), count desc, a.mid desc(String), 9999(Integer)
+2020-03-22 21:21:39.798 [http-nio-8080-exec-6] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - ==> Parameters: category(String), count desc, a.mid desc(String), 9999(Integer)
+2020-03-22 21:21:39.801 [http-nio-8080-exec-6] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - <==      Total: 2
+2020-03-22 21:21:39.801 [http-nio-8080-exec-6] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - <==      Total: 2
+2020-03-22 21:21:39.801 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a9013d6]
+2020-03-22 21:21:39.801 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:39.802 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e0ac893] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:39.802 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:39.802 [http-nio-8080-exec-6] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - ==>  Preparing: select a.*, count(b.cid) as count from t_metas a left join `t_relationships` b on a.mid = b.mid where a.type = ? group by a.mid order by ? limit ? 
+2020-03-22 21:21:39.802 [http-nio-8080-exec-6] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - ==>  Preparing: select a.*, count(b.cid) as count from t_metas a left join `t_relationships` b on a.mid = b.mid where a.type = ? group by a.mid order by ? limit ? 
+2020-03-22 21:21:39.803 [http-nio-8080-exec-6] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - ==> Parameters: tag(String), count desc, a.mid desc(String), 9999(Integer)
+2020-03-22 21:21:39.803 [http-nio-8080-exec-6] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - ==> Parameters: tag(String), count desc, a.mid desc(String), 9999(Integer)
+2020-03-22 21:21:39.805 [http-nio-8080-exec-6] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - <==      Total: 0
+2020-03-22 21:21:39.805 [http-nio-8080-exec-6] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - <==      Total: 0
+2020-03-22 21:21:39.805 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e0ac893]
+2020-03-22 21:21:39.806 [http-nio-8080-exec-6] INFO  com.my.blog.website.utils.LogAspect - RESPONSE : admin/category
+2020-03-22 21:21:39.806 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:39.806 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@540df325] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:39.806 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:39.806 [http-nio-8080-exec-6] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:39.806 [http-nio-8080-exec-6] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:39.806 [http-nio-8080-exec-6] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:39.806 [http-nio-8080-exec-6] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:39.809 [http-nio-8080-exec-6] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:39.809 [http-nio-8080-exec-6] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:39.809 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@540df325]
+2020-03-22 21:21:40.263 [http-nio-8080-exec-5] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36
+2020-03-22 21:21:40.263 [http-nio-8080-exec-5] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/comments, 来路地址: 0:0:0:0:0:0:0:1
+2020-03-22 21:21:40.264 [http-nio-8080-exec-5] INFO  com.my.blog.website.utils.LogAspect - URL : http://localhost:8080/admin/comments,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.admin.CommentController.index,ARGS : [1, 15, org.apache.catalina.connector.RequestFacade@3b306e7b]
+2020-03-22 21:21:40.270 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:40.270 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6aed5411] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:40.272 [http-nio-8080-exec-5] DEBUG SQL_CACHE - Cache Hit Ratio [SQL_CACHE]: 0.2857142857142857
+2020-03-22 21:21:40.274 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:40.274 [http-nio-8080-exec-5] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_comments WHERE (author_id <> ?) 
+2020-03-22 21:21:40.274 [http-nio-8080-exec-5] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_comments WHERE (author_id <> ?) 
+2020-03-22 21:21:40.275 [http-nio-8080-exec-5] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: 1(Integer)
+2020-03-22 21:21:40.275 [http-nio-8080-exec-5] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: 1(Integer)
+2020-03-22 21:21:40.277 [http-nio-8080-exec-5] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2020-03-22 21:21:40.277 [http-nio-8080-exec-5] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2020-03-22 21:21:40.278 [http-nio-8080-exec-5] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select coid, cid, created, author, author_id, owner_id, mail, url, ip, agent, type, status, parent , content from t_comments WHERE ( author_id <> ? ) order by coid desc LIMIT ? 
+2020-03-22 21:21:40.278 [http-nio-8080-exec-5] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select coid, cid, created, author, author_id, owner_id, mail, url, ip, agent, type, status, parent , content from t_comments WHERE ( author_id <> ? ) order by coid desc LIMIT ? 
+2020-03-22 21:21:40.278 [http-nio-8080-exec-5] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - ==> Parameters: 1(Integer), 15(Integer)
+2020-03-22 21:21:40.278 [http-nio-8080-exec-5] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - ==> Parameters: 1(Integer), 15(Integer)
+2020-03-22 21:21:40.290 [http-nio-8080-exec-5] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - <==      Total: 4
+2020-03-22 21:21:40.290 [http-nio-8080-exec-5] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - <==      Total: 4
+2020-03-22 21:21:40.290 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6aed5411]
+2020-03-22 21:21:40.290 [http-nio-8080-exec-5] INFO  com.my.blog.website.utils.LogAspect - RESPONSE : admin/comment_list
+2020-03-22 21:21:40.290 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:40.291 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e59ec75] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:40.291 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:40.291 [http-nio-8080-exec-5] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:40.291 [http-nio-8080-exec-5] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:40.292 [http-nio-8080-exec-5] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:40.292 [http-nio-8080-exec-5] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:40.294 [http-nio-8080-exec-5] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:40.294 [http-nio-8080-exec-5] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:40.294 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e59ec75]
+2020-03-22 21:21:40.896 [http-nio-8080-exec-4] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36
+2020-03-22 21:21:40.896 [http-nio-8080-exec-4] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/page, 来路地址: 0:0:0:0:0:0:0:1
+2020-03-22 21:21:40.896 [http-nio-8080-exec-4] INFO  com.my.blog.website.utils.LogAspect - URL : http://localhost:8080/admin/page,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.admin.PageController.index,ARGS : [org.apache.catalina.connector.RequestFacade@3b306e7b]
+2020-03-22 21:21:40.901 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:40.901 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63ff3c42] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:40.902 [http-nio-8080-exec-4] DEBUG SQL_CACHE - Cache Hit Ratio [SQL_CACHE]: 0.375
+2020-03-22 21:21:40.904 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:40.904 [http-nio-8080-exec-4] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_contents WHERE (type = ?) 
+2020-03-22 21:21:40.904 [http-nio-8080-exec-4] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_contents WHERE (type = ?) 
+2020-03-22 21:21:40.905 [http-nio-8080-exec-4] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: page(String)
+2020-03-22 21:21:40.905 [http-nio-8080-exec-4] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: page(String)
+2020-03-22 21:21:40.906 [http-nio-8080-exec-4] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2020-03-22 21:21:40.906 [http-nio-8080-exec-4] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2020-03-22 21:21:40.906 [http-nio-8080-exec-4] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select cid, title, slug, created, modified, author_id, type, status, tags, categories, hits, comments_num, allow_comment, allow_ping, allow_feed , content from t_contents WHERE ( type = ? ) order by created desc LIMIT ? 
+2020-03-22 21:21:40.906 [http-nio-8080-exec-4] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select cid, title, slug, created, modified, author_id, type, status, tags, categories, hits, comments_num, allow_comment, allow_ping, allow_feed , content from t_contents WHERE ( type = ? ) order by created desc LIMIT ? 
+2020-03-22 21:21:40.907 [http-nio-8080-exec-4] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - ==> Parameters: page(String), 9999(Integer)
+2020-03-22 21:21:40.907 [http-nio-8080-exec-4] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - ==> Parameters: page(String), 9999(Integer)
+2020-03-22 21:21:40.908 [http-nio-8080-exec-4] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - <==      Total: 1
+2020-03-22 21:21:40.908 [http-nio-8080-exec-4] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - <==      Total: 1
+2020-03-22 21:21:40.908 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63ff3c42]
+2020-03-22 21:21:40.908 [http-nio-8080-exec-4] INFO  com.my.blog.website.utils.LogAspect - RESPONSE : admin/page_list
+2020-03-22 21:21:40.908 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:40.909 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d0c30d] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:40.909 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:40.909 [http-nio-8080-exec-4] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:40.909 [http-nio-8080-exec-4] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:40.910 [http-nio-8080-exec-4] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:40.910 [http-nio-8080-exec-4] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:40.911 [http-nio-8080-exec-4] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:40.911 [http-nio-8080-exec-4] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:40.911 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d0c30d]
+2020-03-22 21:21:41.464 [http-nio-8080-exec-3] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36
+2020-03-22 21:21:41.464 [http-nio-8080-exec-3] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/article, 来路地址: 0:0:0:0:0:0:0:1
+2020-03-22 21:21:41.466 [http-nio-8080-exec-3] INFO  com.my.blog.website.utils.LogAspect - URL : http://localhost:8080/admin/article,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.admin.ArticleController.index,ARGS : [1, 15, org.apache.catalina.connector.RequestFacade@3b306e7b]
+2020-03-22 21:21:41.469 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:41.469 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2213857d]
+2020-03-22 21:21:41.470 [http-nio-8080-exec-3] DEBUG SQL_CACHE - Cache Hit Ratio [SQL_CACHE]: 0.4444444444444444
+2020-03-22 21:21:41.471 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will be managed by Spring
+2020-03-22 21:21:41.471 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_contents WHERE (type = ?) 
+2020-03-22 21:21:41.471 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_contents WHERE (type = ?) 
+2020-03-22 21:21:41.471 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: post(String)
+2020-03-22 21:21:41.471 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: post(String)
+2020-03-22 21:21:41.472 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2020-03-22 21:21:41.472 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2020-03-22 21:21:41.473 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select cid, title, slug, created, modified, author_id, type, status, tags, categories, hits, comments_num, allow_comment, allow_ping, allow_feed , content from t_contents WHERE ( type = ? ) order by created desc LIMIT ? 
+2020-03-22 21:21:41.473 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select cid, title, slug, created, modified, author_id, type, status, tags, categories, hits, comments_num, allow_comment, allow_ping, allow_feed , content from t_contents WHERE ( type = ? ) order by created desc LIMIT ? 
+2020-03-22 21:21:41.473 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - ==> Parameters: post(String), 15(Integer)
+2020-03-22 21:21:41.473 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - ==> Parameters: post(String), 15(Integer)
+2020-03-22 21:21:41.476 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - <==      Total: 2
+2020-03-22 21:21:41.476 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - <==      Total: 2
+2020-03-22 21:21:41.476 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2213857d]
+2020-03-22 21:21:41.476 [http-nio-8080-exec-3] INFO  com.my.blog.website.utils.LogAspect - RESPONSE : admin/article_list
+2020-03-22 21:21:41.477 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2213857d]
+2020-03-22 21:21:41.477 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2213857d]
+2020-03-22 21:21:41.477 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2213857d]
+2020-03-22 21:21:41.478 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:41.478 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@281e8197] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:41.479 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:41.479 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:41.479 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:41.479 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:41.479 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:41.481 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:41.481 [http-nio-8080-exec-3] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:41.481 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@281e8197]
+2020-03-22 21:21:41.911 [http-nio-8080-exec-2] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36
+2020-03-22 21:21:41.911 [http-nio-8080-exec-2] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/article/publish, 来路地址: 0:0:0:0:0:0:0:1
+2020-03-22 21:21:41.912 [http-nio-8080-exec-2] INFO  com.my.blog.website.utils.LogAspect - URL : http://localhost:8080/admin/article/publish,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.admin.ArticleController.newArticle,ARGS : [org.apache.catalina.connector.RequestFacade@3b306e7b]
+2020-03-22 21:21:41.912 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:41.913 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4edaffb1]
+2020-03-22 21:21:41.914 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will be managed by Spring
+2020-03-22 21:21:41.914 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.MetaVoMapper.selectByExample - ==>  Preparing: select mid, name, slug, type, description, sort, parent from t_metas WHERE ( type = ? ) order by sort desc, mid desc 
+2020-03-22 21:21:41.914 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.MetaVoMapper.selectByExample - ==>  Preparing: select mid, name, slug, type, description, sort, parent from t_metas WHERE ( type = ? ) order by sort desc, mid desc 
+2020-03-22 21:21:41.914 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.MetaVoMapper.selectByExample - ==> Parameters: category(String)
+2020-03-22 21:21:41.914 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.MetaVoMapper.selectByExample - ==> Parameters: category(String)
+2020-03-22 21:21:41.915 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.MetaVoMapper.selectByExample - <==      Total: 2
+2020-03-22 21:21:41.915 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.MetaVoMapper.selectByExample - <==      Total: 2
+2020-03-22 21:21:41.916 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4edaffb1]
+2020-03-22 21:21:41.916 [http-nio-8080-exec-2] INFO  com.my.blog.website.utils.LogAspect - RESPONSE : admin/article_edit
+2020-03-22 21:21:41.916 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4edaffb1]
+2020-03-22 21:21:41.916 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4edaffb1]
+2020-03-22 21:21:41.916 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4edaffb1]
+2020-03-22 21:21:41.917 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:41.917 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3906d1c0] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:41.918 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:41.918 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:41.918 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:41.918 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:41.918 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:41.919 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:41.919 [http-nio-8080-exec-2] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:41.919 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3906d1c0]
+2020-03-22 21:21:42.862 [http-nio-8080-exec-1] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36
+2020-03-22 21:21:42.862 [http-nio-8080-exec-1] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/index, 来路地址: 0:0:0:0:0:0:0:1
+2020-03-22 21:21:42.863 [http-nio-8080-exec-1] INFO  com.my.blog.website.utils.LogAspect - URL : http://localhost:8080/admin/index,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.admin.IndexController.index,ARGS : [org.apache.catalina.connector.RequestFacade@3b306e7b]
+2020-03-22 21:21:42.864 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:42.864 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e3ae3a5]
+2020-03-22 21:21:42.864 [http-nio-8080-exec-1] DEBUG SQL_CACHE - Cache Hit Ratio [SQL_CACHE]: 0.5
+2020-03-22 21:21:42.865 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will be managed by Spring
+2020-03-22 21:21:42.865 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_comments 
+2020-03-22 21:21:42.865 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_comments 
+2020-03-22 21:21:42.865 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: 
+2020-03-22 21:21:42.865 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: 
+2020-03-22 21:21:42.867 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2020-03-22 21:21:42.867 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2020-03-22 21:21:42.868 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select coid, cid, created, author, author_id, owner_id, mail, url, ip, agent, type, status, parent , content from t_comments order by created desc LIMIT ? 
+2020-03-22 21:21:42.868 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select coid, cid, created, author, author_id, owner_id, mail, url, ip, agent, type, status, parent , content from t_comments order by created desc LIMIT ? 
+2020-03-22 21:21:42.869 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - ==> Parameters: 5(Integer)
+2020-03-22 21:21:42.869 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - ==> Parameters: 5(Integer)
+2020-03-22 21:21:42.872 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - <==      Total: 4
+2020-03-22 21:21:42.872 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - <==      Total: 4
+2020-03-22 21:21:42.872 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e3ae3a5]
+2020-03-22 21:21:42.872 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e3ae3a5] from current transaction
+2020-03-22 21:21:42.873 [http-nio-8080-exec-1] DEBUG SQL_CACHE - Cache Hit Ratio [SQL_CACHE]: 0.5454545454545454
+2020-03-22 21:21:42.876 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_contents WHERE (status = ? AND type = ?) 
+2020-03-22 21:21:42.876 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_contents WHERE (status = ? AND type = ?) 
+2020-03-22 21:21:42.876 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample_COUNT - ==> Parameters: publish(String), post(String)
+2020-03-22 21:21:42.876 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample_COUNT - ==> Parameters: publish(String), post(String)
+2020-03-22 21:21:42.877 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample_COUNT - <==      Total: 1
+2020-03-22 21:21:42.877 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample_COUNT - <==      Total: 1
+2020-03-22 21:21:42.879 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample - ==>  Preparing: select cid, title, slug, created, modified, author_id, type, status, tags, categories, hits, comments_num, allow_comment, allow_ping, allow_feed from t_contents WHERE ( status = ? and type = ? ) order by created desc LIMIT ? 
+2020-03-22 21:21:42.879 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample - ==>  Preparing: select cid, title, slug, created, modified, author_id, type, status, tags, categories, hits, comments_num, allow_comment, allow_ping, allow_feed from t_contents WHERE ( status = ? and type = ? ) order by created desc LIMIT ? 
+2020-03-22 21:21:42.879 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample - ==> Parameters: publish(String), post(String), 5(Integer)
+2020-03-22 21:21:42.879 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample - ==> Parameters: publish(String), post(String), 5(Integer)
+2020-03-22 21:21:42.881 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample - <==      Total: 1
+2020-03-22 21:21:42.881 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample - <==      Total: 1
+2020-03-22 21:21:42.881 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e3ae3a5]
+2020-03-22 21:21:42.881 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e3ae3a5] from current transaction
+2020-03-22 21:21:42.882 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.countByExample - ==>  Preparing: select count(*) from t_contents WHERE ( type = ? and status = ? ) 
+2020-03-22 21:21:42.882 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.countByExample - ==>  Preparing: select count(*) from t_contents WHERE ( type = ? and status = ? ) 
+2020-03-22 21:21:42.883 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.countByExample - ==> Parameters: post(String), publish(String)
+2020-03-22 21:21:42.883 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.countByExample - ==> Parameters: post(String), publish(String)
+2020-03-22 21:21:42.884 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.countByExample - <==      Total: 1
+2020-03-22 21:21:42.884 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.countByExample - <==      Total: 1
+2020-03-22 21:21:42.884 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e3ae3a5]
+2020-03-22 21:21:42.884 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e3ae3a5] from current transaction
+2020-03-22 21:21:42.885 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.countByExample - ==>  Preparing: select count(*) from t_comments 
+2020-03-22 21:21:42.885 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.countByExample - ==>  Preparing: select count(*) from t_comments 
+2020-03-22 21:21:42.885 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.countByExample - ==> Parameters: 
+2020-03-22 21:21:42.885 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.countByExample - ==> Parameters: 
+2020-03-22 21:21:42.911 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.countByExample - <==      Total: 1
+2020-03-22 21:21:42.911 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.countByExample - <==      Total: 1
+2020-03-22 21:21:42.911 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e3ae3a5]
+2020-03-22 21:21:42.911 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e3ae3a5] from current transaction
+2020-03-22 21:21:42.912 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.AttachVoMapper.countByExample - ==>  Preparing: select count(*) from t_attach 
+2020-03-22 21:21:42.912 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.AttachVoMapper.countByExample - ==>  Preparing: select count(*) from t_attach 
+2020-03-22 21:21:42.912 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.AttachVoMapper.countByExample - ==> Parameters: 
+2020-03-22 21:21:42.912 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.AttachVoMapper.countByExample - ==> Parameters: 
+2020-03-22 21:21:42.913 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.AttachVoMapper.countByExample - <==      Total: 1
+2020-03-22 21:21:42.913 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.AttachVoMapper.countByExample - <==      Total: 1
+2020-03-22 21:21:42.913 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e3ae3a5]
+2020-03-22 21:21:42.913 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e3ae3a5] from current transaction
+2020-03-22 21:21:42.914 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.MetaVoMapper.countByExample - ==>  Preparing: select count(*) from t_metas WHERE ( type = ? ) 
+2020-03-22 21:21:42.914 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.MetaVoMapper.countByExample - ==>  Preparing: select count(*) from t_metas WHERE ( type = ? ) 
+2020-03-22 21:21:42.914 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.MetaVoMapper.countByExample - ==> Parameters: link(String)
+2020-03-22 21:21:42.914 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.MetaVoMapper.countByExample - ==> Parameters: link(String)
+2020-03-22 21:21:42.915 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.MetaVoMapper.countByExample - <==      Total: 1
+2020-03-22 21:21:42.915 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.MetaVoMapper.countByExample - <==      Total: 1
+2020-03-22 21:21:42.915 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e3ae3a5]
+2020-03-22 21:21:42.915 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e3ae3a5] from current transaction
+2020-03-22 21:21:42.916 [http-nio-8080-exec-1] DEBUG SQL_CACHE - Cache Hit Ratio [SQL_CACHE]: 0.5833333333333334
+2020-03-22 21:21:42.916 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_logs 
+2020-03-22 21:21:42.916 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_logs 
+2020-03-22 21:21:42.917 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample_COUNT - ==> Parameters: 
+2020-03-22 21:21:42.917 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample_COUNT - ==> Parameters: 
+2020-03-22 21:21:42.919 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample_COUNT - <==      Total: 1
+2020-03-22 21:21:42.919 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample_COUNT - <==      Total: 1
+2020-03-22 21:21:42.920 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample - ==>  Preparing: select id, action, data, author_id, ip, created from t_logs order by id desc LIMIT ? 
+2020-03-22 21:21:42.920 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample - ==>  Preparing: select id, action, data, author_id, ip, created from t_logs order by id desc LIMIT ? 
+2020-03-22 21:21:42.920 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample - ==> Parameters: 5(Integer)
+2020-03-22 21:21:42.920 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample - ==> Parameters: 5(Integer)
+2020-03-22 21:21:42.922 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample - <==      Total: 5
+2020-03-22 21:21:42.922 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample - <==      Total: 5
+2020-03-22 21:21:42.922 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e3ae3a5]
+2020-03-22 21:21:42.922 [http-nio-8080-exec-1] INFO  com.my.blog.website.utils.LogAspect - RESPONSE : admin/index
+2020-03-22 21:21:42.922 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e3ae3a5]
+2020-03-22 21:21:42.923 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e3ae3a5]
+2020-03-22 21:21:42.923 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e3ae3a5]
+2020-03-22 21:21:42.924 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2020-03-22 21:21:42.924 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@60a4578a] was not registered for synchronization because synchronization is not active
+2020-03-22 21:21:42.924 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@d3050b5] will not be managed by Spring
+2020-03-22 21:21:42.924 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:42.924 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==>  Preparing: select name, value, description from t_options where name = ? 
+2020-03-22 21:21:42.925 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:42.925 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - ==> Parameters: site_record(String)
+2020-03-22 21:21:42.926 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:42.926 [http-nio-8080-exec-1] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByPrimaryKey - <==      Total: 1
+2020-03-22 21:21:42.926 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@60a4578a]

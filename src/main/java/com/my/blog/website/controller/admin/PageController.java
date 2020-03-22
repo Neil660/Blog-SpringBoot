@@ -1,0 +1,171 @@
+package com.my.blog.website.controller.admin;
+
+import com.github.pagehelper.PageInfo;
+import com.my.blog.website.model.Bo.RestResponseBo;
+import com.my.blog.website.model.Vo.UserVo;
+import com.my.blog.website.service.ILogService;
+import com.my.blog.website.constant.WebConst;
+import com.my.blog.website.controller.BaseController;
+import com.my.blog.website.dto.LogActions;
+import com.my.blog.website.dto.Types;
+import com.my.blog.website.model.Vo.ContentVo;
+import com.my.blog.website.model.Vo.ContentVoExample;
+import com.my.blog.website.service.IContentService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+
+/**
+ * 自定义页面管理
+ */
+@Controller()
+@RequestMapping("admin/page")
+public class PageController extends BaseController {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(PageController.class);
+
+    @Autowired
+    private IContentService contentsService;
+
+    @Autowired
+    private ILogService logService;
+
+    /**
+     * 查询自定义页面
+     * @param request
+     * @return
+     */
+    @GetMapping(value = "")
+    public String index(HttpServletRequest request) {
+        ContentVoExample contentVoExample = new ContentVoExample();
+        contentVoExample.setOrderByClause("created desc");
+        contentVoExample.createCriteria().andTypeEqualTo(Types.PAGE.getType());
+        PageInfo<ContentVo> contentsPaginator = contentsService.getArticlesWithpage(contentVoExample, 1, WebConst.MAX_POSTS);
+        request.setAttribute("articles", contentsPaginator);
+        return "admin/page_list";
+    }
+
+    /**
+     * 转到新建自定义页的页面
+     * @param request
+     * @return
+     */
+    @GetMapping(value = "new")
+    public String newPage(HttpServletRequest request) {
+        return "admin/page_edit";
+    }
+
+    /**
+     * 预览自定义的页面
+     * @param cid
+     * @param request
+     * @return
+     */
+    @GetMapping(value = "/{cid}")
+    public String editPage(@PathVariable String cid, HttpServletRequest request) {
+        ContentVo contents = contentsService.getContents(cid);
+        request.setAttribute("contents", contents);
+        return "admin/page_edit";
+    }
+
+    /**
+     * 新建自定义的页面
+     * @param title
+     * @param content
+     * @param status
+     * @param slug
+     * @param allowComment
+     * @param allowPing
+     * @param request
+     * @return
+     */
+    @PostMapping(value = "publish")
+    @ResponseBody
+    public RestResponseBo publishPage(@RequestParam String title, @RequestParam String content,
+                                      @RequestParam String status, @RequestParam String slug,
+                                      @RequestParam(required = false) Integer allowComment, @RequestParam(required = false) Integer allowPing, HttpServletRequest request) {
+
+        UserVo users = this.user(request);
+        ContentVo contents = new ContentVo();
+        contents.setTitle(title);
+        contents.setContent(content);
+        contents.setStatus(status);
+        contents.setSlug(slug);
+        contents.setType(Types.PAGE.getType());
+        if (null != allowComment) {
+            contents.setAllowComment(allowComment == 1);
+        }
+        if (null != allowPing) {
+            contents.setAllowPing(allowPing == 1);
+        }
+        contents.setAuthorId(users.getUid());
+        String result = contentsService.publish(contents);
+        if (!WebConst.SUCCESS_RESULT.equals(result)) {
+            return RestResponseBo.fail(result);
+        }
+        return RestResponseBo.ok();
+    }
+
+    /**
+     * 修改自定义的页面
+     * @param cid
+     * @param title
+     * @param content
+     * @param status
+     * @param slug
+     * @param allowComment
+     * @param allowPing
+     * @param request
+     * @return
+     */
+    @PostMapping(value = "modify")
+    @ResponseBody
+    public RestResponseBo modifyArticle(@RequestParam Integer cid, @RequestParam String title,
+                                        @RequestParam String content,
+                                        @RequestParam String status, @RequestParam String slug,
+                                        @RequestParam(required = false) Integer allowComment, @RequestParam(required = false) Integer allowPing, HttpServletRequest request) {
+
+        UserVo users = this.user(request);
+        ContentVo contents = new ContentVo();
+        contents.setCid(cid);
+        contents.setTitle(title);
+        contents.setContent(content);
+        contents.setStatus(status);
+        contents.setSlug(slug);
+        contents.setType(Types.PAGE.getType());
+        if (null != allowComment) {
+            contents.setAllowComment(allowComment == 1);
+        }
+        if (null != allowPing) {
+            contents.setAllowPing(allowPing == 1);
+        }
+        contents.setAuthorId(users.getUid());
+        String result = contentsService.updateArticle(contents);
+        if (!WebConst.SUCCESS_RESULT.equals(result)) {
+            return RestResponseBo.fail(result);
+        }
+        return RestResponseBo.ok();
+    }
+
+    /**
+     * 删除自定义的页面
+     * @param cid
+     * @param request
+     * @return
+     */
+    @RequestMapping(value = "delete")
+    @ResponseBody
+    public RestResponseBo delete(@RequestParam int cid, HttpServletRequest request) {
+        String result = contentsService.deleteByCid(cid);
+        logService.insertLog(LogActions.DEL_ARTICLE.getAction(), cid + "", request.getRemoteAddr(), this.getUid(request));
+        if (!WebConst.SUCCESS_RESULT.equals(result)) {
+            return RestResponseBo.fail(result);
+        }
+        return RestResponseBo.ok();
+    }
+}
