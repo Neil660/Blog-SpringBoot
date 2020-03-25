@@ -22,6 +22,8 @@ public interface UserVoMapper {
 
     UserVo selectByPrimaryKey(Integer uid);
 
+    UserVo selectByName(String username);
+
     int updateByExampleSelective(@Param("record") UserVo record, @Param("example") UserVoExample example);
 
     int updateByExample(@Param("record") UserVo record, @Param("example") UserVoExample example);

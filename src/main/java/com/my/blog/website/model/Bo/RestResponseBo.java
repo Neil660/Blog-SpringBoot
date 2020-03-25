@@ -1,8 +1,11 @@
 package com.my.blog.website.model.Bo;
 
+import lombok.Data;
+
 /**
  * rest返回对象
  */
+@Data
 public class RestResponseBo<T> {
 
     /**
@@ -63,46 +66,6 @@ public class RestResponseBo<T> {
         this.success = success;
         this.msg = msg;
         this.code = code;
-    }
-
-    public T getPayload() {
-        return payload;
-    }
-
-    public void setPayload(T payload) {
-        this.payload = payload;
-    }
-
-    public boolean isSuccess() {
-        return success;
-    }
-
-    public void setSuccess(boolean success) {
-        this.success = success;
-    }
-
-    public String getMsg() {
-        return msg;
-    }
-
-    public void setMsg(String msg) {
-        this.msg = msg;
-    }
-
-    public int getCode() {
-        return code;
-    }
-
-    public void setCode(int code) {
-        this.code = code;
-    }
-
-    public long getTimestamp() {
-        return timestamp;
-    }
-
-    public void setTimestamp(long timestamp) {
-        this.timestamp = timestamp;
     }
 
     public static RestResponseBo ok() {

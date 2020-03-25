@@ -1,18 +1,34 @@
 package com.my.blog.website.model.Vo;
 
+import lombok.Data;
+
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 实体类User的Example
+ * 动态生成where语句
+ * 自定义标准查询简介（QBC：Query By Criteria）
+ */
 public class UserVoExample {
+    /**
+     * order by分组
+     */
     protected String orderByClause;
 
+    /**
+     * distinct过滤掉多余的重复记录
+     */
     protected boolean distinct;
 
-    protected List<Criteria> oredCriteria;
-
+    /**
+     *limit [offset,] limit
+     * 偏移量，表示我们现在需要的数据是跳过多少行数据之后的
+     */
     private Integer limit;
-
     private Integer offset;
+
+    protected List<Criteria> oredCriteria;
 
     public UserVoExample() {
         oredCriteria = new ArrayList<Criteria>();
@@ -34,10 +50,27 @@ public class UserVoExample {
         return distinct;
     }
 
+    public void setLimit(Integer limit) {
+        this.limit = limit;
+    }
+
+    public Integer getLimit() {
+        return limit;
+    }
+
+    public void setOffset(Integer offset) {
+        this.offset = offset;
+    }
+
+    public Integer getOffset() {
+        return offset;
+    }
+
     public List<Criteria> getOredCriteria() {
         return oredCriteria;
     }
 
+    //添加Criteria
     public void or(Criteria criteria) {
         oredCriteria.add(criteria);
     }
@@ -48,6 +81,7 @@ public class UserVoExample {
         return criteria;
     }
 
+    //创建Criteria
     public Criteria createCriteria() {
         Criteria criteria = createCriteriaInternal();
         if (oredCriteria.size() == 0) {
@@ -65,22 +99,6 @@ public class UserVoExample {
         oredCriteria.clear();
         orderByClause = null;
         distinct = false;
-    }
-
-    public void setLimit(Integer limit) {
-        this.limit = limit;
-    }
-
-    public Integer getLimit() {
-        return limit;
-    }
-
-    public void setOffset(Integer offset) {
-        this.offset = offset;
-    }
-
-    public Integer getOffset() {
-        return offset;
     }
 
     protected abstract static class GeneratedCriteria {
@@ -855,18 +873,21 @@ public class UserVoExample {
         }
     }
 
-    /**
-     */
     public static class Criteria extends GeneratedCriteria {
-
         protected Criteria() {
             super();
         }
     }
 
     public static class Criterion {
+        /**
+         * 数据库字段
+         */
         private String condition;
 
+        /**
+         * 传入的值
+         */
         private Object value;
 
         private Object secondValue;
@@ -920,6 +941,10 @@ public class UserVoExample {
             this.noValue = true;
         }
 
+        protected Criterion(String condition, Object value) {
+            this(condition, value, null);
+        }
+
         protected Criterion(String condition, Object value, String typeHandler) {
             super();
             this.condition = condition;
@@ -932,8 +957,8 @@ public class UserVoExample {
             }
         }
 
-        protected Criterion(String condition, Object value) {
-            this(condition, value, null);
+        protected Criterion(String condition, Object value, Object secondValue) {
+            this(condition, value, secondValue, null);
         }
 
         protected Criterion(String condition, Object value, Object secondValue, String typeHandler) {
@@ -943,10 +968,6 @@ public class UserVoExample {
             this.secondValue = secondValue;
             this.typeHandler = typeHandler;
             this.betweenValue = true;
-        }
-
-        protected Criterion(String condition, Object value, Object secondValue) {
-            this(condition, value, secondValue, null);
         }
     }
 }

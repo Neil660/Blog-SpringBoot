@@ -42,7 +42,8 @@ public class BaseInterceptor implements HandlerInterceptor {
     private AdminCommons adminCommons;
 
     @Override
-    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object o) throws Exception {
+    public boolean preHandle(HttpServletRequest request,
+                             HttpServletResponse response, Object o) throws Exception {
         String contextPath = request.getContextPath();
         // System.out.println(contextPath);
         String uri = request.getRequestURI();
@@ -76,7 +77,9 @@ public class BaseInterceptor implements HandlerInterceptor {
     }
 
     @Override
-    public void postHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, ModelAndView modelAndView) throws Exception {
+    public void postHandle(HttpServletRequest httpServletRequest,
+                           HttpServletResponse httpServletResponse,
+                           Object o, ModelAndView modelAndView) throws Exception {
         OptionVo ov = optionService.getOptionByName("site_record");
         httpServletRequest.setAttribute("commons", commons);//一些工具类和公共方法
         httpServletRequest.setAttribute("option", ov);
@@ -84,7 +87,9 @@ public class BaseInterceptor implements HandlerInterceptor {
     }
 
     @Override
-    public void afterCompletion(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, Exception e) throws Exception {
+    public void afterCompletion(HttpServletRequest httpServletRequest,
+                                HttpServletResponse httpServletResponse,
+                                Object o, Exception e) throws Exception {
 
     }
 }

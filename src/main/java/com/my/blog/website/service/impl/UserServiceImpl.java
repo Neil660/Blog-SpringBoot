@@ -51,6 +51,15 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
+    public UserVo queryUserByName(String username) {
+        UserVo userVo = null;
+        if (!username.equals("") && username == null) {
+            userVo = userDao.selectByName(username);
+        }
+        return userVo;
+    }
+
+    @Override
     public UserVo login(String username, String password) {
         if (StringUtils.isBlank(username) || StringUtils.isBlank(password)) {
             throw new TipException("用户名和密码不能为空");
