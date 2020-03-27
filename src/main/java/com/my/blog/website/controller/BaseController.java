@@ -3,6 +3,9 @@ package com.my.blog.website.controller;
 import com.my.blog.website.model.Vo.UserVo;
 import com.my.blog.website.utils.TaleUtils;
 import com.my.blog.website.utils.MapCache;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.StringRedisTemplate;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -14,7 +17,10 @@ public abstract class BaseController {
 
     public static String THEME = "themes/default";
 
-    protected MapCache cache = MapCache.single();
+    //protected MapCache cache = MapCache.single();
+
+    @Autowired
+    protected RedisTemplate redisTemplate;
 
     /**
      * 主页的页面主题

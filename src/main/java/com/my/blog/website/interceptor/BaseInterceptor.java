@@ -10,6 +10,8 @@ import com.my.blog.website.dto.Types;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
@@ -17,6 +19,7 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.concurrent.TimeUnit;
 
 /**
  * 自定义拦截器
@@ -33,7 +36,10 @@ public class BaseInterceptor implements HandlerInterceptor {
     @Autowired
     private IOptionService optionService;
 
-    private MapCache cache = MapCache.single();
+    //private MapCache cache = MapCache.single();
+
+    @Autowired
+    protected RedisTemplate redisTemplate;
 
     @Autowired
     private Commons commons;
@@ -70,7 +76,8 @@ public class BaseInterceptor implements HandlerInterceptor {
         if (request.getMethod().equals("GET")) {
             String csrf_token = UUID.UU64();
             // 默认存储30分钟
-            cache.hset(Types.CSRF_TOKEN.getType(), csrf_token, uri, 30 * 60);
+            //cache.hset(Types.CSRF_TOKEN.getType(), csrf_token, uri, 30 * 60);
+            redisTemplate.opsForValue().set(Types.CSRF_TOKEN.getType() + ":" + csrf_token,uri,30 * 60, TimeUnit.SECONDS);
             request.setAttribute("_csrf_token", csrf_token);
         }
         return true;

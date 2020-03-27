@@ -7,6 +7,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
@@ -17,6 +18,7 @@ import javax.sql.DataSource;
 
 @MapperScan("com.my.blog.website.dao")
 @SpringBootApplication
+@EnableCaching
 @EnableTransactionManagement
 public class CoreApplication {
     @Bean(initMethod = "init", destroyMethod = "close")

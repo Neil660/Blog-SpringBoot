@@ -24,6 +24,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.concurrent.RecursiveTask;
+import java.util.concurrent.TimeUnit;
 
 /**
  * 用户后台登录/登出
@@ -66,7 +67,8 @@ public class AuthController extends BaseController {
         if(username != null && !username.equals("") && !username.equals("admin")){
             return RestResponseBo.fail("非管理员登录");
         }
-        Integer error_count = cache.get("login_error_count");
+        //Integer error_count = cache.get("login_error_count");
+        Integer error_count = (int) redisTemplate.opsForValue().get("login_error_count");
         try {
             UserVo user = usersService.login(username, password);
             request.getSession().setAttribute(WebConst.LOGIN_SESSION_KEY, user);
@@ -79,7 +81,8 @@ public class AuthController extends BaseController {
             if (error_count > 3) {
                 return RestResponseBo.fail("您输入密码已经错误超过3次，请10分钟后尝试");
             }
-            cache.set("login_error_count", error_count, 10 * 60);
+            //cache.set("login_error_count", error_count, 10 * 60);
+            redisTemplate.opsForValue().set("login_error_count", error_count, 10 * 60, TimeUnit.SECONDS);
             String msg = "登录失败";
             if (e instanceof TipException) {
                 msg = e.getMessage();

@@ -33,6 +33,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.net.URLEncoder;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * 首页
@@ -58,6 +59,19 @@ public class IndexController extends BaseController {
 
     @Autowired
     private ILogService logService;
+
+    /**
+     * 测试redis缓存
+     * @param id
+     * @return
+     */
+    @GetMapping("user/{id}")
+    @ResponseBody
+    public UserVo ceshi(@PathVariable Integer id){
+        UserVo userVo = usersService.queryUserById(id);
+        System.out.println(userVo.toString());
+        return userVo;
+    }
 
     /**
      * 首页
@@ -177,7 +191,8 @@ public class IndexController extends BaseController {
                                   HttpServletRequest request,
                                   HttpServletResponse response) {
 
-        Integer error_count = cache.get("login_error_count");
+        //Integer error_count = cache.get("login_error_count");
+        Integer error_count = (Integer) redisTemplate.opsForValue().get("login_error_count");
         try {
             UserVo user = usersService.login(username, password);
             request.getSession().setAttribute(WebConst.LOGIN_SESSION_KEY, user);
@@ -190,7 +205,8 @@ public class IndexController extends BaseController {
             if (error_count > 3) {
                 return RestResponseBo.fail("您输入密码已经错误超过3次，请10分钟后尝试");
             }
-            cache.set("login_error_count", error_count, 10 * 60);
+            //cache.set("login_error_count", error_count, 10 * 60);
+            redisTemplate.opsForValue().set("login_error_count", error_count, 10 * 60, TimeUnit.SECONDS);
             String msg = "登录失败";
             if (e instanceof TipException) {
                 msg = e.getMessage();
@@ -209,7 +225,7 @@ public class IndexController extends BaseController {
                                  @RequestParam String email,
                                   HttpServletRequest request,
                                   HttpServletResponse response) {
-        Integer error_count = cache.get("login_error_count");
+        //Integer error_count = cache.get("login_error_count");
         try {
             UserVo u = new UserVo();
             u.setUsername(username);
@@ -219,11 +235,11 @@ public class IndexController extends BaseController {
             request.getSession().setAttribute(WebConst.LOGIN_SESSION_KEY, u);
             logService.insertLog(LogActions.LOGIN.getAction(), null, request.getRemoteAddr(), uid);
         } catch (Exception e) {
-            error_count = null == error_count ? 1 : error_count + 1;
+            /*error_count = null == error_count ? 1 : error_count + 1;
             if (error_count > 3) {
                 return RestResponseBo.fail("您输入密码已经错误超过3次，请10分钟后尝试");
             }
-            cache.set("login_error_count", error_count, 10 * 60);
+            cache.set("login_error_count", error_count, 10 * 60);*/
             String msg = "登录失败";
             if (e instanceof TipException) {
                 msg = e.getMessage();
@@ -257,14 +273,16 @@ public class IndexController extends BaseController {
     public RestResponseBo comment(HttpServletRequest request, HttpServletResponse response,
                                   @RequestParam Integer cid, @RequestParam Integer coid,
                                   @RequestParam String author, @RequestParam String mail,
-                                  @RequestParam String url, @RequestParam String text, @RequestParam String _csrf_token) {
+                                  @RequestParam String url, @RequestParam String text, @RequestParam String _csrf_token)
+                                  throws NullPointerException{
 
         String ref = request.getHeader("Referer");
         if (StringUtils.isBlank(ref) || StringUtils.isBlank(_csrf_token)) {
             return RestResponseBo.fail(ErrorCode.BAD_REQUEST);
         }
 
-        String token = cache.hget(Types.CSRF_TOKEN.getType(), _csrf_token);
+        //String token = cache.hget(Types.CSRF_TOKEN.getType(), _csrf_token);
+        String token = (String) redisTemplate.opsForValue().get(Types.CSRF_TOKEN.getType() + ":" + _csrf_token);
         if (StringUtils.isBlank(token)) {
             return RestResponseBo.fail(ErrorCode.BAD_REQUEST);
         }
@@ -290,7 +308,8 @@ public class IndexController extends BaseController {
         }
 
         String val = IPKit.getIpAddrByRequest(request) + ":" + cid;
-        Integer count = cache.hget(Types.COMMENTS_FREQUENCY.getType(), val);
+        //Integer count = cache.hget(Types.COMMENTS_FREQUENCY.getType(), val);
+        Integer count = (Integer)redisTemplate.opsForValue().get(Types.COMMENTS_FREQUENCY.getType() + ":" + val);
         if (null != count && count > 0) {
             return RestResponseBo.fail("您发表评论太快了，请过会再试");
         }
@@ -319,6 +338,7 @@ public class IndexController extends BaseController {
             }
             // 设置对每个文章1分钟可以评论一次
             //cache.hset(Types.COMMENTS_FREQUENCY.getType(), val, 1, 60);
+            redisTemplate.opsForValue().set(Types.COMMENTS_FREQUENCY.getType() + ":" + val, 1, 60, TimeUnit.SECONDS);
             if (!WebConst.SUCCESS_RESULT.equals(result)) {
                 return RestResponseBo.fail(result);
             }
@@ -433,7 +453,8 @@ public class IndexController extends BaseController {
      * @param chits
      */
     private void updateArticleHit(Integer cid, Integer chits) {
-        Integer hits = cache.hget("article" + cid, "hits");
+        //Integer hits = cache.hget("article" + cid, "hits");
+        Integer hits = (Integer) redisTemplate.opsForValue().get("article" + cid + ":" + "hits");
         if (chits == null) {
             chits = 0;
         }
@@ -443,9 +464,11 @@ public class IndexController extends BaseController {
             temp.setCid(cid);
             temp.setHits(chits + hits);
             contentService.updateContentByCid(temp);
-            cache.hset("article" + cid, "hits", 1);
+            //cache.hset("article" + cid, "hits", 1);
+            redisTemplate.opsForValue().set("article" + cid + ":" + "hits", 1);
         } else {
-            cache.hset("article" + cid, "hits", hits);
+            //cache.hset("article" + cid, "hits", hits);
+            redisTemplate.opsForValue().set("article" + cid + ":" + "hits", hits);
         }
     }
 
@@ -509,11 +532,14 @@ public class IndexController extends BaseController {
      */
     private boolean checkHitsFrequency(HttpServletRequest request, String cid) {
         String val = IPKit.getIpAddrByRequest(request) + ":" + cid;
-        Integer count = cache.hget(Types.HITS_FREQUENCY.getType(), val);
+        //Integer count = cache.hget(Types.HITS_FREQUENCY.getType(), val);
+        Integer count = (Integer) redisTemplate.opsForValue().get(Types.HITS_FREQUENCY.getType() + ":" + val);
         if (null != count && count > 0) {
             return true;
         }
-        cache.hset(Types.HITS_FREQUENCY.getType(), val, 1, WebConst.HITS_LIMIT_TIME);
+        //cache.hset(Types.HITS_FREQUENCY.getType(), val, 1, WebConst.HITS_LIMIT_TIME);
+        //两个小时
+        redisTemplate.opsForValue().set(Types.HITS_FREQUENCY.getType() + ":" + val, 1, 2, TimeUnit.HOURS);
         return false;
     }
 

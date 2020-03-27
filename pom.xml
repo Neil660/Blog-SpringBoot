@@ -41,6 +41,11 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-cache</artifactId>
+        </dependency>
+        <!-- 去掉logging日志 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
             <exclusions>
                 <exclusion>
@@ -49,7 +54,6 @@
                 </exclusion>
             </exclusions>
         </dependency>
-
         <!-- Start: log4j2 -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
