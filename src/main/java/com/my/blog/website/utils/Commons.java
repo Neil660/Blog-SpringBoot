@@ -18,8 +18,6 @@ import java.util.regex.Pattern;
 
 /**
  * 主题公共函数
- * <p>
- * Created by 13 on 2017/2/21.
  */
 @Component
 public final class Commons {
@@ -127,7 +125,6 @@ public final class Commons {
 
     /**
      * 返回网站链接下的全址
-     *
      * @param sub 后面追加的地址
      * @return
      */
@@ -147,7 +144,6 @@ public final class Commons {
 
     /**
      * 网站配置项
-     *
      * @param key
      * @param defalutValue 默认值
      * @return

@@ -1,73 +1,45 @@
 package com.my.blog.website.utils.backup.db;
 
+import lombok.Getter;
+import lombok.Setter;
+
 public class Column {
+
+    @Setter
 	private String catalogName;
+
+    @Setter
 	private String schemaName;
+
+    @Setter
 	private String tableName;
+
+    @Getter
+    @Setter
 	private String name;
+
+    @Getter
+    @Setter
 	private String label;
+
+    @Getter
+    @Setter
 	private int type;
+
+    @Setter
 	private String typeName;
+
+    @Setter
 	private String columnClassName;
+
+    @Setter
 	private int displaySize;
+
+    @Setter
 	private int precision;
+
+    @Setter
 	private int scale;
-
-	public String getName() {
-		return name;
-	}
-
-	public String getLabel() {
-		return label;
-	}
-
-	public int getType() {
-		return type;
-	}
-
-	public void setCatalogName(String catalogName) {
-		this.catalogName = catalogName;
-	}
-
-	public void setSchemaName(String schemaName) {
-		this.schemaName = schemaName;
-	}
-
-	public void setTableName(String tableName) {
-		this.tableName = tableName;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public void setLabel(String label) {
-		this.label = label;
-	}
-
-	public void setType(int type) {
-		this.type = type;
-	}
-
-	public void setTypeName(String typeName) {
-		this.typeName = typeName;
-	}
-
-	public void setColumnClassName(String columnClassName) {
-		this.columnClassName = columnClassName;
-	}
-
-	public void setDisplaySize(int displaySize) {
-		this.displaySize = displaySize;
-	}
-
-	public void setPrecision(int precision) {
-		this.precision = precision;
-	}
-
-	public void setScale(int scale) {
-		this.scale = scale;
-	}
 
 	@Override
 	public String toString() {
